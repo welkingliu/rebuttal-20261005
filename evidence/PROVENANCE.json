@@ -1,0 +1,56 @@
+[
+  {
+    "path": "evidence/paired_channels.json",
+    "original_sha256": "c1a739959ba19e6e4709a3239b4e42da22cdd114b14a7dbbf38d6e7657b19499",
+    "public_sha256": "c1a739959ba19e6e4709a3239b4e42da22cdd114b14a7dbbf38d6e7657b19499",
+    "path_redaction": true
+  },
+  {
+    "path": "evidence/plain_motifs_sgcls_counts.json",
+    "original_sha256": "230bd7cd66023e6b8f2fcb2a9f552a78f9838248bd9f537d0321f5eec3d88c8c",
+    "public_sha256": "230bd7cd66023e6b8f2fcb2a9f552a78f9838248bd9f537d0321f5eec3d88c8c",
+    "path_redaction": true
+  },
+  {
+    "path": "evidence/transformer_sgdet_counts.json",
+    "original_sha256": "f2f14bc718a9332c3054fdaf1547554e679614d2a3fbc9103a6c2f172fcefbcc",
+    "public_sha256": "f2f14bc718a9332c3054fdaf1547554e679614d2a3fbc9103a6c2f172fcefbcc",
+    "path_redaction": true
+  },
+  {
+    "path": "evidence/sam_history_audit.json",
+    "original_sha256": "84b0e548b6f32f9e582dbf6f5c825a96801ce226728e85083507bd5dee1ea356",
+    "public_sha256": "84b0e548b6f32f9e582dbf6f5c825a96801ce226728e85083507bd5dee1ea356",
+    "path_redaction": true
+  },
+  {
+    "path": "evidence/sam_bounded_summary.json",
+    "original_sha256": "2e3e311d35ca4aa9dfa5416b7b1df011ec7cd29d0f840aa8135dbbc1a9690f58",
+    "public_sha256": "3cd9d430752eac6442234a5d7fdf4ec6dd2152ad3b33b50086e14292923d80dc",
+    "path_redaction": true
+  },
+  {
+    "path": "evidence/v_scope_audit.json",
+    "original_sha256": "e322124fffff71397995808a3d9f7436817bfaf0e88a1b2e3679cefbf28adf41",
+    "public_sha256": "e322124fffff71397995808a3d9f7436817bfaf0e88a1b2e3679cefbf28adf41",
+    "path_redaction": true
+  },
+  {
+    "path": "evidence/R17_original_v_summary.json",
+    "original_sha256": "32c8f98825fb434ce020b14130c716bb75341c6c38af559fef1234e96f31db2f",
+    "public_sha256": "d00b65845b9f52d66947a764d90670e3edbac6ffc25b9cb00b5424141d0cbdfa",
+    "path_redaction": true
+  },
+  {
+    "path": "evidence/server_verified_summary.json",
+    "original_sha256": "8a5bebda7c765f5ade702adecdc797b54c5c6587f7965b17aaef9126be190aa0",
+    "public_sha256": "3e1674640cf80373cc3d1dd9348fa3ec318e25fb8b6308ec8e51b05c2a3ed3bb",
+    "path_redaction": true
+  },
+  {
+    "path": "evidence/VX_summary_20261005.json",
+    "original_sha256": "7f7f4949650cac3260c423ccd5eda091ad64f08d317884a02ac49174aa5b8ff4",
+    "public_sha256": "7f7f4949650cac3260c423ccd5eda091ad64f08d317884a02ac49174aa5b8ff4",
+    "path_redaction": true
+  }
+]

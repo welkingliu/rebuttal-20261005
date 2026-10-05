@@ -1,0 +1,9 @@
+test_object_loss_reaches_readout_not_detached_inputs (__main__.ReadoutScope.test_object_loss_reaches_readout_not_detached_inputs) ... ok
+test_object_update_does_not_change_predicate_logits (__main__.ReadoutScope.test_object_update_does_not_change_predicate_logits) ... ok
+test_relation_loss_has_no_object_readout_gradient (__main__.ReadoutScope.test_relation_loss_has_no_object_readout_gradient) ... ok
+test_unmodified_readout_preserves_probabilities (__main__.ReadoutScope.test_unmodified_readout_preserves_probabilities) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.017s
+
+OK

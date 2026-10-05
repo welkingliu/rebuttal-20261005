@@ -1,0 +1,45 @@
+{
+  "status": "complete",
+  "checks": [
+    {
+      "name": "unit_tests",
+      "returncode": 0
+    },
+    {
+      "name": "scope_tests",
+      "returncode": 0
+    },
+    {
+      "name": "paired_reanalysis",
+      "returncode": 0
+    },
+    {
+      "name": "experiment_1a_help",
+      "returncode": 0
+    },
+    {
+      "name": "experiment_1b_help",
+      "returncode": 0
+    },
+    {
+      "name": "experiment_2_help",
+      "returncode": 0
+    },
+    {
+      "name": "experiment_3_help",
+      "returncode": 0
+    },
+    {
+      "name": "experiment_4_help",
+      "returncode": 0
+    },
+    {
+      "name": "experiment_5_help",
+      "returncode": 0
+    }
+  ],
+  "all_passed": true,
+  "archive_crc_passed": true,
+  "archive_npz_files": 4000,
+  "scope": "existing dependency environment; not clean installation or native full-model rerun"
+}

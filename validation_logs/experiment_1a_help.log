@@ -1,0 +1,64 @@
+usage: python -m sgg_core.experiments.experiment_1a [-h]
+                                                    [--psg_train_ann PSG_TRAIN_ANN]
+                                                    [--psg_eval_ann PSG_EVAL_ANN]
+                                                    [--image_root IMAGE_ROOT]
+                                                    [--panoptic_root PANOPTIC_ROOT]
+                                                    [--predicted_mask_train_dir PREDICTED_MASK_TRAIN_DIR]
+                                                    [--predicted_mask_eval_dir PREDICTED_MASK_EVAL_DIR]
+                                                    [--train_cache TRAIN_CACHE]
+                                                    [--eval_cache EVAL_CACHE]
+                                                    [--source_summary SOURCE_SUMMARY]
+                                                    [--backbone BACKBONE]
+                                                    --output_dir OUTPUT_DIR
+                                                    [--cache_dir CACHE_DIR]
+                                                    [--train_samples TRAIN_SAMPLES]
+                                                    [--eval_samples EVAL_SAMPLES]
+                                                    [--seeds SEEDS [SEEDS ...]]
+                                                    [--validation_fraction VALIDATION_FRACTION]
+                                                    [--probe_epochs PROBE_EPOCHS]
+                                                    [--early_stopping_patience EARLY_STOPPING_PATIENCE]
+                                                    [--early_stopping_min_delta EARLY_STOPPING_MIN_DELTA]
+                                                    [--feature_normalization {none,zscore,l2}]
+                                                    [--probe_batch_size PROBE_BATCH_SIZE]
+                                                    [--learning_rate LEARNING_RATE]
+                                                    [--weight_decay WEIGHT_DECAY]
+                                                    [--roi_chunk_size ROI_CHUNK_SIZE]
+                                                    [--device DEVICE]
+
+Experiment I-A: segmentation-conditioned object identity audit. The frozen
+foundation backbone never receives object labels. Linear probes are trained on
+image-disjoint PSG training objects and evaluated on the held-out PSG split.
+Box ROI, ground-truth mask, and optional predicted-mask features are compared
+under one object ontology.
+
+options:
+  -h, --help            show this help message and exit
+  --psg_train_ann PSG_TRAIN_ANN
+  --psg_eval_ann PSG_EVAL_ANN
+  --image_root IMAGE_ROOT
+  --panoptic_root PANOPTIC_ROOT
+  --predicted_mask_train_dir PREDICTED_MASK_TRAIN_DIR
+  --predicted_mask_eval_dir PREDICTED_MASK_EVAL_DIR
+  --train_cache TRAIN_CACHE
+  --eval_cache EVAL_CACHE
+  --source_summary SOURCE_SUMMARY
+                        Formal source summary supplying ontology and mask
+                        provenance in cache-only mode.
+  --backbone BACKBONE
+  --output_dir OUTPUT_DIR
+  --cache_dir CACHE_DIR
+  --train_samples TRAIN_SAMPLES
+  --eval_samples EVAL_SAMPLES
+  --seeds SEEDS [SEEDS ...]
+  --validation_fraction VALIDATION_FRACTION
+  --probe_epochs PROBE_EPOCHS
+  --early_stopping_patience EARLY_STOPPING_PATIENCE
+  --early_stopping_min_delta EARLY_STOPPING_MIN_DELTA
+  --feature_normalization {none,zscore,l2}
+                        Fit normalization on probe-training objects only;
+                        apply unchanged to validation/eval.
+  --probe_batch_size PROBE_BATCH_SIZE
+  --learning_rate LEARNING_RATE
+  --weight_decay WEIGHT_DECAY
+  --roi_chunk_size ROI_CHUNK_SIZE
+  --device DEVICE

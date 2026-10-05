@@ -1,0 +1,74 @@
+{
+  "name": "motifs_official",
+  "architecture_family": "Neural Motifs",
+  "paradigm": "RNN-based",
+  "factory": "official_adapters.motifs:create_adapter",
+  "environment_python": "/absolute/path/to/model-specific-env/bin/python",
+  "checkpoints": {
+    "predcls": {
+      "path": "/absolute/path/to/predcls_model_final.pth",
+      "sha256": "replace-with-predcls-checkpoint-sha256"
+    },
+    "sgcls": {
+      "path": "/absolute/path/to/sgcls_model_final.pth",
+      "sha256": "replace-with-sgcls-checkpoint-sha256"
+    },
+    "sgdet": {
+      "path": "/absolute/path/to/sgdet_model_final.pth",
+      "sha256": "replace-with-sgdet-checkpoint-sha256"
+    }
+  },
+  "supported_tasks": ["predcls", "sgcls", "sgdet"],
+  "diagnostic_task": "sgdet",
+  "source_url": "https://github.com/your-pinned-official-repository",
+  "source_root": "/absolute/path/to/checked-out-official-repository",
+  "source_commit": "replace-with-full-git-commit",
+  "training_dataset": "VG-150",
+  "reference_dataset": "vg",
+  "metric_scale": "fraction",
+  "reproduction_tolerance": 0.02,
+  "input_source": "official_precomputed_features",
+  "training_seed": 17,
+  "parameter_count": 0,
+  "baseline_mR": 0.0,
+  "supported_datasets": ["vg"],
+  "ontology_ids": {
+    "vg": "vg150:replace-with-loader-ontology-digest"
+  },
+  "perturbation_contract": {
+    "full": true,
+    "noise": true,
+    "swap": true,
+    "union_zero": true,
+    "boxes_only": true,
+    "visual_noise": true,
+    "color_jitter": false,
+    "union_attenuation": true,
+    "on_manifold_replacement": true,
+    "random_node_mask": true,
+    "key_node_mask": true,
+    "unrelated_node_mask": true
+  },
+  "diagnostic_contract": {
+    "gt_pair_predict": true,
+    "gt_node_features": true,
+    "graph_intervention": true
+  },
+  "mitigation_contract": {
+    "forward_grounding": true,
+    "trainable_grounding_parameters": true,
+    "object_logits": true,
+    "trainable_object_parameters": true,
+    "mask_object_logits": false,
+    "relation_logit_alignment": "gt_relations",
+    "object_logit_alignment": "gt_entities"
+  },
+  "config": {
+    "config_file": "/absolute/path/to/config.yaml"
+  },
+  "reference_metrics": {
+    "PredCls/R@50": null,
+    "SGCls/R@50": null,
+    "SGDet/R@50": null
+  }
+}

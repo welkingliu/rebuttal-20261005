@@ -1,0 +1,90 @@
+{
+  "catalog_version": "2026-07-15",
+  "policy": "One isolated environment per incompatible official codebase; never import multiple legacy SGG frameworks in one process.",
+  "environments": [
+    {
+      "id": "sgg-microsoft",
+      "families": ["IMP", "Neural Motifs", "GRCNN", "RelDN"],
+      "source_dir": "external/official_repos/microsoft_scene_graph_benchmark",
+      "install": "Follow the pinned repository requirements and compile its C++/CUDA ops."
+    },
+    {
+      "id": "sgg-kaihua",
+      "families": ["VCTree", "TDE-Motifs"],
+      "source_dir": "external/official_repos/Scene-Graph-Benchmark.pytorch",
+      "install": "Install repository requirements, then run setup.py build develop."
+    },
+    {
+      "id": "sgg-gpsnet",
+      "families": ["GPS-Net"],
+      "source_dir": "external/official_repos/GPS-Net",
+      "install": "Install the official requirements and compile repository extensions."
+    },
+    {
+      "id": "sgg-pysgg",
+      "families": ["BGNN", "SGG Transformer"],
+      "source_dir": "external/official_repos/PySGG",
+      "install": "Create the official PySGG environment and compile its extensions."
+    },
+    {
+      "id": "sgg-reltr",
+      "families": ["RelTR"],
+      "source_dir": "external/official_repos/RelTR",
+      "install": "Install requirements.txt in an isolated environment."
+    },
+    {
+      "id": "sgg-sgtr",
+      "families": ["SGTR"],
+      "source_dir": "external/official_repos/SGTR",
+      "install": "Install SGTR requirements and its pinned cvpods build."
+    },
+    {
+      "id": "sgg-penet",
+      "families": ["PE-Net"],
+      "source_dir": "external/official_repos/PENET",
+      "install": "Install PENET requirements and maskrcnn benchmark extensions."
+    },
+    {
+      "id": "sgg-openpsg",
+      "families": ["PSGTR", "PSGFormer"],
+      "source_dir": "external/official_repos/OpenPSG",
+      "install": "Install the repository-pinned MMCV, MMDetection, Detectron2, and panopticapi stack."
+    },
+    {
+      "id": "sgg-ovsgtr",
+      "families": ["OvSGTR"],
+      "source_dir": "external/official_repos/OvSGTR",
+      "install": "Run the official install.sh in an isolated environment; it pins PyTorch 1.9.1 and GroundingDINO."
+    },
+    {
+      "id": "sgg-egtr",
+      "families": ["EGTR"],
+      "source_dir": "external/official_repos/egtr",
+      "install": "Install requirements.txt and run lib/fpn/make.sh."
+    },
+    {
+      "id": "sgg-pgsg",
+      "families": ["PGSG"],
+      "source_dir": "external/official_repos/Pix2Grp_CVPR2024",
+      "install": "Use Python 3.8, PyTorch 2.0.0, torchvision 0.15.0, CUDA 11.8, Transformers 4.29.2, then setup.py build develop."
+    },
+    {
+      "id": "sgg-hiker",
+      "families": ["HiKER-SGG"],
+      "source_dir": "external/official_repos/HiKER-SGG",
+      "install": "Use PyTorch 1.12.0 with CUDA 11.6 and install requirements.txt."
+    },
+    {
+      "id": "sgg-llm4sgg",
+      "families": ["LLM4SGG"],
+      "source_dir": "external/official_repos/torch-LLM4SGG",
+      "install": "Install the repository requirements in its own environment."
+    },
+    {
+      "id": "sgg-apt",
+      "families": ["APT"],
+      "source_dir": "external/official_repos/APT",
+      "install": "Install the repository requirements and maskrcnn benchmark extensions."
+    }
+  ]
+}

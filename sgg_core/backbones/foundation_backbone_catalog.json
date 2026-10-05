@@ -1,0 +1,123 @@
+{
+  "catalog_version": "2026-07-15",
+  "hardware_target": "2 x RTX 3090 24GB; one process and one image per GPU",
+  "main_comparable_panel": [
+    "resnet50",
+    "dinov2_b",
+    "siglip2_b",
+    "radio_v25_b",
+    "cradio_v4_so400m",
+    "sam_vit_b"
+  ],
+  "extended_panel": [
+    "swin_b",
+    "clip_vitl14",
+    "dinov2_l",
+    "dinov3_b",
+    "dinov3_l",
+    "siglip_so400m",
+    "openclip_vith14"
+  ],
+  "backbones": [
+    {
+      "id": "resnet50",
+      "family": "supervised_cnn",
+      "experiment_1_runnable": true,
+      "recommended_2x3090": true,
+      "source": "torchvision"
+    },
+    {
+      "id": "swin_b",
+      "family": "hierarchical_transformer",
+      "experiment_1_runnable": true,
+      "recommended_2x3090": false,
+      "source": "timm"
+    },
+    {
+      "id": "dinov2_b",
+      "family": "self_supervised_dense",
+      "experiment_1_runnable": true,
+      "recommended_2x3090": true,
+      "source": "facebookresearch/dinov2"
+    },
+    {
+      "id": "dinov2_l",
+      "family": "self_supervised_dense",
+      "experiment_1_runnable": true,
+      "recommended_2x3090": false,
+      "source": "facebookresearch/dinov2"
+    },
+    {
+      "id": "dinov3_b",
+      "family": "self_supervised_dense_2025",
+      "experiment_1_runnable": true,
+      "recommended_2x3090": false,
+      "source": "facebook/dinov3-vitb16-pretrain-lvd1689m"
+    },
+    {
+      "id": "dinov3_l",
+      "family": "self_supervised_dense_2025",
+      "experiment_1_runnable": true,
+      "recommended_2x3090": false,
+      "source": "facebook/dinov3-vitl16-pretrain-lvd1689m"
+    },
+    {
+      "id": "clip_vitl14",
+      "family": "contrastive_vision_language",
+      "experiment_1_runnable": true,
+      "recommended_2x3090": false,
+      "source": "openai/CLIP"
+    },
+    {
+      "id": "siglip2_b",
+      "family": "dense_vision_language_2025",
+      "experiment_1_runnable": true,
+      "recommended_2x3090": true,
+      "source": "google/siglip2-base-patch16-224"
+    },
+    {
+      "id": "radio_v25_b",
+      "family": "multi_teacher_foundation_2025",
+      "experiment_1_runnable": true,
+      "recommended_2x3090": true,
+      "source": "nvidia/RADIO-B"
+    },
+    {
+      "id": "cradio_v4_so400m",
+      "family": "multi_teacher_foundation_2026",
+      "experiment_1_runnable": true,
+      "recommended_2x3090": true,
+      "source": "nvidia/C-RADIOv4-SO400M"
+    },
+    {
+      "id": "sam_vit_b",
+      "family": "promptable_segmentation_encoder",
+      "experiment_1_runnable": true,
+      "recommended_2x3090": true,
+      "source": "facebook/sam-vit-base"
+    }
+  ],
+  "non_comparable_controls": [
+    {
+      "id": "grounding_dino",
+      "role": "open_vocabulary_box_grounding_control",
+      "source": "IDEA-Research/GroundingDINO"
+    },
+    {
+      "id": "sam2_1",
+      "role": "promptable_segmentation_control",
+      "source": "facebookresearch/sam2"
+    },
+    {
+      "id": "florence2_large",
+      "role": "promptable_detection_and_caption_control",
+      "source": "microsoft/Florence-2-large"
+    },
+    {
+      "id": "qwen3_vl_4b_instruct",
+      "role": "generative_vlm_object_relation_audit",
+      "source": "Qwen/Qwen3-VL-4B-Instruct"
+    }
+  ],
+  "protocol_note": "Controls need a frozen parser and separate generative/grounding metrics. Do not merge their scores into the standard VG-150 R/mR table."
+}

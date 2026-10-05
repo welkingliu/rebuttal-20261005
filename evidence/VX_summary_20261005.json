@@ -1,0 +1,1042 @@
+{
+  "status": "complete",
+  "protocol_sha256": "887d904d2c7127ecd5f45052b3432acd00033d6fbc8790f658803b3422dfc060",
+  "images": 600,
+  "smoke": false,
+  "choices": {
+    "frozen_head": 0,
+    "adapt_plain": 0,
+    "adapt_diagnostic": 0
+  },
+  "primary": "adapt_diagnostic",
+  "arms": {
+    "frozen_head": {
+      "images": 600,
+      "object_top1": 0.754708097928437,
+      "object_macro_accuracy": 0.7283996414701499,
+      "object_supported_classes": 150,
+      "post_nms_object_top1": 0.49971751412429377,
+      "positive_objects": 10620,
+      "ece": 0.4513496535798958,
+      "foreground_nll": 2.1519763973922155,
+      "foreground_brier": 1.0793490413667568,
+      "R": {
+        "1": 0.06822429685498295,
+        "5": 0.20016916872819956,
+        "10": 0.27445165740395455,
+        "20": 0.3513425968985526,
+        "50": 0.43962148832691433,
+        "100": 0.4822506176424819
+      },
+      "mR": {
+        "1": 0.014484139330032723,
+        "5": 0.05738572156895093,
+        "10": 0.074782785107892,
+        "20": 0.0942522243502779,
+        "50": 0.12273465844950135,
+        "100": 0.13848524181693178
+      }
+    },
+    "adapt_plain": {
+      "images": 600,
+      "object_top1": 0.754708097928437,
+      "object_macro_accuracy": 0.7283996414701499,
+      "object_supported_classes": 150,
+      "post_nms_object_top1": 0.49971751412429377,
+      "positive_objects": 10620,
+      "ece": 0.4513496535798958,
+      "foreground_nll": 2.1519763973922155,
+      "foreground_brier": 1.0793490413667568,
+      "R": {
+        "1": 0.06822429685498295,
+        "5": 0.20016916872819956,
+        "10": 0.27445165740395455,
+        "20": 0.3513425968985526,
+        "50": 0.43962148832691433,
+        "100": 0.4822506176424819
+      },
+      "mR": {
+        "1": 0.014484139330032723,
+        "5": 0.05738572156895093,
+        "10": 0.074782785107892,
+        "20": 0.0942522243502779,
+        "50": 0.12273465844950135,
+        "100": 0.13848524181693178
+      }
+    },
+    "adapt_diagnostic": {
+      "images": 600,
+      "object_top1": 0.754708097928437,
+      "object_macro_accuracy": 0.7283996414701499,
+      "object_supported_classes": 150,
+      "post_nms_object_top1": 0.49971751412429377,
+      "positive_objects": 10620,
+      "ece": 0.4513496535798958,
+      "foreground_nll": 2.1519763973922155,
+      "foreground_brier": 1.0793490413667568,
+      "R": {
+        "1": 0.06822429685498295,
+        "5": 0.20016916872819956,
+        "10": 0.27445165740395455,
+        "20": 0.3513425968985526,
+        "50": 0.43962148832691433,
+        "100": 0.4822506176424819
+      },
+      "mR": {
+        "1": 0.014484139330032723,
+        "5": 0.05738572156895093,
+        "10": 0.074782785107892,
+        "20": 0.0942522243502779,
+        "50": 0.12273465844950135,
+        "100": 0.13848524181693178
+      }
+    },
+    "native": {
+      "images": 600,
+      "object_top1": 0.754708097928437,
+      "object_macro_accuracy": 0.7283996414701499,
+      "object_supported_classes": 150,
+      "post_nms_object_top1": 0.49971751412429377,
+      "positive_objects": 10620,
+      "ece": 0.4513496535798958,
+      "foreground_nll": 2.1519763973922155,
+      "foreground_brier": 1.0793490413667568,
+      "R": {
+        "1": 0.06822429685498295,
+        "5": 0.20016916872819956,
+        "10": 0.27445165740395455,
+        "20": 0.3513425968985526,
+        "50": 0.43962148832691433,
+        "100": 0.4822506176424819
+      },
+      "mR": {
+        "1": 0.014484139330032723,
+        "5": 0.05738572156895093,
+        "10": 0.074782785107892,
+        "20": 0.0942522243502779,
+        "50": 0.12273465844950135,
+        "100": 0.13848524181693178
+      }
+    }
+  },
+  "scopes": {
+    "frozen_head": {
+      "pre_nms": {
+        "objects": 10620,
+        "correct": 8015,
+        "accuracy": 0.754708097928437
+      },
+      "post_nms": {
+        "objects": 10620,
+        "correct": 5307,
+        "accuracy": 0.49971751412429377
+      },
+      "unique_pre": {
+        "objects": 6012,
+        "correct": 4912,
+        "accuracy": 0.8170326014637392
+      },
+      "unique_post": {
+        "objects": 6012,
+        "correct": 4321,
+        "accuracy": 0.7187292082501663
+      },
+      "native_top50_endpoint": {
+        "objects": 6515,
+        "correct": 4474,
+        "accuracy": 0.6867229470452801
+      },
+      "not_native_top50_endpoint": {
+        "objects": 4105,
+        "correct": 833,
+        "accuracy": 0.20292326431181487
+      },
+      "fg_conditional_ece": 0.025118060409321175,
+      "emitted_ece": 0.2589081599312078,
+      "gt_objects": 6969,
+      "unique_matched": 6012
+    },
+    "adapt_plain": {
+      "pre_nms": {
+        "objects": 10620,
+        "correct": 8015,
+        "accuracy": 0.754708097928437
+      },
+      "post_nms": {
+        "objects": 10620,
+        "correct": 5307,
+        "accuracy": 0.49971751412429377
+      },
+      "unique_pre": {
+        "objects": 6012,
+        "correct": 4912,
+        "accuracy": 0.8170326014637392
+      },
+      "unique_post": {
+        "objects": 6012,
+        "correct": 4321,
+        "accuracy": 0.7187292082501663
+      },
+      "native_top50_endpoint": {
+        "objects": 6515,
+        "correct": 4474,
+        "accuracy": 0.6867229470452801
+      },
+      "not_native_top50_endpoint": {
+        "objects": 4105,
+        "correct": 833,
+        "accuracy": 0.20292326431181487
+      },
+      "fg_conditional_ece": 0.025118060409321175,
+      "emitted_ece": 0.2589081599312078,
+      "gt_objects": 6969,
+      "unique_matched": 6012
+    },
+    "adapt_diagnostic": {
+      "pre_nms": {
+        "objects": 10620,
+        "correct": 8015,
+        "accuracy": 0.754708097928437
+      },
+      "post_nms": {
+        "objects": 10620,
+        "correct": 5307,
+        "accuracy": 0.49971751412429377
+      },
+      "unique_pre": {
+        "objects": 6012,
+        "correct": 4912,
+        "accuracy": 0.8170326014637392
+      },
+      "unique_post": {
+        "objects": 6012,
+        "correct": 4321,
+        "accuracy": 0.7187292082501663
+      },
+      "native_top50_endpoint": {
+        "objects": 6515,
+        "correct": 4474,
+        "accuracy": 0.6867229470452801
+      },
+      "not_native_top50_endpoint": {
+        "objects": 4105,
+        "correct": 833,
+        "accuracy": 0.20292326431181487
+      },
+      "fg_conditional_ece": 0.025118060409321175,
+      "emitted_ece": 0.2589081599312078,
+      "gt_objects": 6969,
+      "unique_matched": 6012
+    },
+    "native": {
+      "pre_nms": {
+        "objects": 10620,
+        "correct": 8015,
+        "accuracy": 0.754708097928437
+      },
+      "post_nms": {
+        "objects": 10620,
+        "correct": 5307,
+        "accuracy": 0.49971751412429377
+      },
+      "unique_pre": {
+        "objects": 6012,
+        "correct": 4912,
+        "accuracy": 0.8170326014637392
+      },
+      "unique_post": {
+        "objects": 6012,
+        "correct": 4321,
+        "accuracy": 0.7187292082501663
+      },
+      "native_top50_endpoint": {
+        "objects": 6515,
+        "correct": 4474,
+        "accuracy": 0.6867229470452801
+      },
+      "not_native_top50_endpoint": {
+        "objects": 4105,
+        "correct": 833,
+        "accuracy": 0.20292326431181487
+      },
+      "fg_conditional_ece": 0.025118059779319163,
+      "emitted_ece": 0.2589081599312078,
+      "gt_objects": 6969,
+      "unique_matched": 6012
+    }
+  },
+  "comparisons": {
+    "frozen_head_versus_native": {
+      "images": 600,
+      "positive_objects": 10620,
+      "net_correct": 0,
+      "positive_gain_images": 0,
+      "negative_gain_images": 0,
+      "zero_gain_selected_images": 600,
+      "gross_correct_count_gain": 0,
+      "gross_correct_count_loss": 0,
+      "delta": {
+        "object": 0.0,
+        "R50": 0.0,
+        "mR50": 0.0
+      },
+      "image_bootstrap_95ci": {
+        "object": [
+          0.0,
+          0.0
+        ],
+        "R50": [
+          0.0,
+          0.0
+        ],
+        "mR50": [
+          0.0,
+          0.0
+        ]
+      },
+      "image_bootstrap_one_sided_95_lower": {
+        "object": 0.0,
+        "R50": 0.0,
+        "mR50": 0.0
+      },
+      "folds": [
+        {
+          "fold": 0,
+          "images": 600,
+          "selected_images": 600,
+          "net_correct": 0,
+          "identity_delta": 0.0,
+          "R50_delta": 0.0,
+          "mR50_delta": 0.0
+        }
+      ],
+      "descriptive_original_numerical_checks": {
+        "identity_point": false,
+        "identity_lower": false,
+        "R_noninferior": true,
+        "mR_noninferior": true
+      },
+      "formal_gate_accepted": false,
+      "independent_confirmation": false,
+      "interval_caveat": "Paired-image interval conditional on one selected fitted model; no adjustment for repeated adaptive exploration",
+      "evaluated_images": 600
+    },
+    "adapt_plain_versus_native": {
+      "images": 600,
+      "positive_objects": 10620,
+      "net_correct": 0,
+      "positive_gain_images": 0,
+      "negative_gain_images": 0,
+      "zero_gain_selected_images": 600,
+      "gross_correct_count_gain": 0,
+      "gross_correct_count_loss": 0,
+      "delta": {
+        "object": 0.0,
+        "R50": 0.0,
+        "mR50": 0.0
+      },
+      "image_bootstrap_95ci": {
+        "object": [
+          0.0,
+          0.0
+        ],
+        "R50": [
+          0.0,
+          0.0
+        ],
+        "mR50": [
+          0.0,
+          0.0
+        ]
+      },
+      "image_bootstrap_one_sided_95_lower": {
+        "object": 0.0,
+        "R50": 0.0,
+        "mR50": 0.0
+      },
+      "folds": [
+        {
+          "fold": 0,
+          "images": 600,
+          "selected_images": 600,
+          "net_correct": 0,
+          "identity_delta": 0.0,
+          "R50_delta": 0.0,
+          "mR50_delta": 0.0
+        }
+      ],
+      "descriptive_original_numerical_checks": {
+        "identity_point": false,
+        "identity_lower": false,
+        "R_noninferior": true,
+        "mR_noninferior": true
+      },
+      "formal_gate_accepted": false,
+      "independent_confirmation": false,
+      "interval_caveat": "Paired-image interval conditional on one selected fitted model; no adjustment for repeated adaptive exploration",
+      "evaluated_images": 600
+    },
+    "adapt_diagnostic_versus_native": {
+      "images": 600,
+      "positive_objects": 10620,
+      "net_correct": 0,
+      "positive_gain_images": 0,
+      "negative_gain_images": 0,
+      "zero_gain_selected_images": 600,
+      "gross_correct_count_gain": 0,
+      "gross_correct_count_loss": 0,
+      "delta": {
+        "object": 0.0,
+        "R50": 0.0,
+        "mR50": 0.0
+      },
+      "image_bootstrap_95ci": {
+        "object": [
+          0.0,
+          0.0
+        ],
+        "R50": [
+          0.0,
+          0.0
+        ],
+        "mR50": [
+          0.0,
+          0.0
+        ]
+      },
+      "image_bootstrap_one_sided_95_lower": {
+        "object": 0.0,
+        "R50": 0.0,
+        "mR50": 0.0
+      },
+      "folds": [
+        {
+          "fold": 0,
+          "images": 600,
+          "selected_images": 600,
+          "net_correct": 0,
+          "identity_delta": 0.0,
+          "R50_delta": 0.0,
+          "mR50_delta": 0.0
+        }
+      ],
+      "descriptive_original_numerical_checks": {
+        "identity_point": false,
+        "identity_lower": false,
+        "R_noninferior": true,
+        "mR_noninferior": true
+      },
+      "formal_gate_accepted": false,
+      "independent_confirmation": false,
+      "interval_caveat": "Paired-image interval conditional on one selected fitted model; no adjustment for repeated adaptive exploration",
+      "evaluated_images": 600
+    },
+    "adapt_plain_versus_frozen_head": {
+      "images": 600,
+      "positive_objects": 10620,
+      "net_correct": 0,
+      "positive_gain_images": 0,
+      "negative_gain_images": 0,
+      "zero_gain_selected_images": 600,
+      "gross_correct_count_gain": 0,
+      "gross_correct_count_loss": 0,
+      "delta": {
+        "object": 0.0,
+        "R50": 0.0,
+        "mR50": 0.0
+      },
+      "image_bootstrap_95ci": {
+        "object": [
+          0.0,
+          0.0
+        ],
+        "R50": [
+          0.0,
+          0.0
+        ],
+        "mR50": [
+          0.0,
+          0.0
+        ]
+      },
+      "image_bootstrap_one_sided_95_lower": {
+        "object": 0.0,
+        "R50": 0.0,
+        "mR50": 0.0
+      },
+      "folds": [
+        {
+          "fold": 0,
+          "images": 600,
+          "selected_images": 600,
+          "net_correct": 0,
+          "identity_delta": 0.0,
+          "R50_delta": 0.0,
+          "mR50_delta": 0.0
+        }
+      ],
+      "descriptive_original_numerical_checks": {
+        "identity_point": false,
+        "identity_lower": false,
+        "R_noninferior": true,
+        "mR_noninferior": true
+      },
+      "formal_gate_accepted": false,
+      "independent_confirmation": false,
+      "interval_caveat": "Paired-image interval conditional on one selected fitted model; no adjustment for repeated adaptive exploration",
+      "evaluated_images": 600
+    },
+    "adapt_diagnostic_versus_adapt_plain": {
+      "images": 600,
+      "positive_objects": 10620,
+      "net_correct": 0,
+      "positive_gain_images": 0,
+      "negative_gain_images": 0,
+      "zero_gain_selected_images": 600,
+      "gross_correct_count_gain": 0,
+      "gross_correct_count_loss": 0,
+      "delta": {
+        "object": 0.0,
+        "R50": 0.0,
+        "mR50": 0.0
+      },
+      "image_bootstrap_95ci": {
+        "object": [
+          0.0,
+          0.0
+        ],
+        "R50": [
+          0.0,
+          0.0
+        ],
+        "mR50": [
+          0.0,
+          0.0
+        ]
+      },
+      "image_bootstrap_one_sided_95_lower": {
+        "object": 0.0,
+        "R50": 0.0,
+        "mR50": 0.0
+      },
+      "folds": [
+        {
+          "fold": 0,
+          "images": 600,
+          "selected_images": 600,
+          "net_correct": 0,
+          "identity_delta": 0.0,
+          "R50_delta": 0.0,
+          "mR50_delta": 0.0
+        }
+      ],
+      "descriptive_original_numerical_checks": {
+        "identity_point": false,
+        "identity_lower": false,
+        "R_noninferior": true,
+        "mR_noninferior": true
+      },
+      "formal_gate_accepted": false,
+      "independent_confirmation": false,
+      "interval_caveat": "Paired-image interval conditional on one selected fitted model; no adjustment for repeated adaptive exploration",
+      "evaluated_images": 600
+    }
+  },
+  "scope_comparisons": {
+    "frozen_head_versus_native": {
+      "pre_nms": {
+        "images": 600,
+        "denominator": 10620,
+        "native_correct": 8015,
+        "changed_correct": 8015,
+        "net_correct": 0,
+        "native_accuracy": 0.754708097928437,
+        "changed_accuracy": 0.754708097928437,
+        "delta_fraction": 0.0,
+        "delta_percentage_points": 0.0,
+        "relative_improvement_percent": 0.0,
+        "paired_image_95ci_pp": [
+          0.0,
+          0.0
+        ],
+        "valid_bootstrap_draws": 2000,
+        "requested_bootstrap_draws": 2000,
+        "interval_scope": "Descriptive, conditional on fitted/selected models; no selection or multiplicity correction"
+      },
+      "post_nms": {
+        "images": 600,
+        "denominator": 10620,
+        "native_correct": 5307,
+        "changed_correct": 5307,
+        "net_correct": 0,
+        "native_accuracy": 0.49971751412429377,
+        "changed_accuracy": 0.49971751412429377,
+        "delta_fraction": 0.0,
+        "delta_percentage_points": 0.0,
+        "relative_improvement_percent": 0.0,
+        "paired_image_95ci_pp": [
+          0.0,
+          0.0
+        ],
+        "valid_bootstrap_draws": 2000,
+        "requested_bootstrap_draws": 2000,
+        "interval_scope": "Descriptive, conditional on fitted/selected models; no selection or multiplicity correction"
+      },
+      "unique_post": {
+        "images": 600,
+        "denominator": 6012,
+        "native_correct": 4321,
+        "changed_correct": 4321,
+        "net_correct": 0,
+        "native_accuracy": 0.7187292082501663,
+        "changed_accuracy": 0.7187292082501663,
+        "delta_fraction": 0.0,
+        "delta_percentage_points": 0.0,
+        "relative_improvement_percent": 0.0,
+        "paired_image_95ci_pp": [
+          0.0,
+          0.0
+        ],
+        "valid_bootstrap_draws": 2000,
+        "requested_bootstrap_draws": 2000,
+        "interval_scope": "Descriptive, conditional on fitted/selected models; no selection or multiplicity correction"
+      },
+      "native_top50_endpoint": {
+        "images": 600,
+        "denominator": 6515,
+        "native_correct": 4474,
+        "changed_correct": 4474,
+        "net_correct": 0,
+        "native_accuracy": 0.6867229470452801,
+        "changed_accuracy": 0.6867229470452801,
+        "delta_fraction": 0.0,
+        "delta_percentage_points": 0.0,
+        "relative_improvement_percent": 0.0,
+        "paired_image_95ci_pp": [
+          0.0,
+          0.0
+        ],
+        "valid_bootstrap_draws": 2000,
+        "requested_bootstrap_draws": 2000,
+        "interval_scope": "Descriptive, conditional on fitted/selected models; no selection or multiplicity correction"
+      },
+      "not_native_top50_endpoint": {
+        "images": 600,
+        "denominator": 4105,
+        "native_correct": 833,
+        "changed_correct": 833,
+        "net_correct": 0,
+        "native_accuracy": 0.20292326431181487,
+        "changed_accuracy": 0.20292326431181487,
+        "delta_fraction": 0.0,
+        "delta_percentage_points": 0.0,
+        "relative_improvement_percent": 0.0,
+        "paired_image_95ci_pp": [
+          0.0,
+          0.0
+        ],
+        "valid_bootstrap_draws": 2000,
+        "requested_bootstrap_draws": 2000,
+        "interval_scope": "Descriptive, conditional on fitted/selected models; no selection or multiplicity correction"
+      }
+    },
+    "adapt_plain_versus_native": {
+      "pre_nms": {
+        "images": 600,
+        "denominator": 10620,
+        "native_correct": 8015,
+        "changed_correct": 8015,
+        "net_correct": 0,
+        "native_accuracy": 0.754708097928437,
+        "changed_accuracy": 0.754708097928437,
+        "delta_fraction": 0.0,
+        "delta_percentage_points": 0.0,
+        "relative_improvement_percent": 0.0,
+        "paired_image_95ci_pp": [
+          0.0,
+          0.0
+        ],
+        "valid_bootstrap_draws": 2000,
+        "requested_bootstrap_draws": 2000,
+        "interval_scope": "Descriptive, conditional on fitted/selected models; no selection or multiplicity correction"
+      },
+      "post_nms": {
+        "images": 600,
+        "denominator": 10620,
+        "native_correct": 5307,
+        "changed_correct": 5307,
+        "net_correct": 0,
+        "native_accuracy": 0.49971751412429377,
+        "changed_accuracy": 0.49971751412429377,
+        "delta_fraction": 0.0,
+        "delta_percentage_points": 0.0,
+        "relative_improvement_percent": 0.0,
+        "paired_image_95ci_pp": [
+          0.0,
+          0.0
+        ],
+        "valid_bootstrap_draws": 2000,
+        "requested_bootstrap_draws": 2000,
+        "interval_scope": "Descriptive, conditional on fitted/selected models; no selection or multiplicity correction"
+      },
+      "unique_post": {
+        "images": 600,
+        "denominator": 6012,
+        "native_correct": 4321,
+        "changed_correct": 4321,
+        "net_correct": 0,
+        "native_accuracy": 0.7187292082501663,
+        "changed_accuracy": 0.7187292082501663,
+        "delta_fraction": 0.0,
+        "delta_percentage_points": 0.0,
+        "relative_improvement_percent": 0.0,
+        "paired_image_95ci_pp": [
+          0.0,
+          0.0
+        ],
+        "valid_bootstrap_draws": 2000,
+        "requested_bootstrap_draws": 2000,
+        "interval_scope": "Descriptive, conditional on fitted/selected models; no selection or multiplicity correction"
+      },
+      "native_top50_endpoint": {
+        "images": 600,
+        "denominator": 6515,
+        "native_correct": 4474,
+        "changed_correct": 4474,
+        "net_correct": 0,
+        "native_accuracy": 0.6867229470452801,
+        "changed_accuracy": 0.6867229470452801,
+        "delta_fraction": 0.0,
+        "delta_percentage_points": 0.0,
+        "relative_improvement_percent": 0.0,
+        "paired_image_95ci_pp": [
+          0.0,
+          0.0
+        ],
+        "valid_bootstrap_draws": 2000,
+        "requested_bootstrap_draws": 2000,
+        "interval_scope": "Descriptive, conditional on fitted/selected models; no selection or multiplicity correction"
+      },
+      "not_native_top50_endpoint": {
+        "images": 600,
+        "denominator": 4105,
+        "native_correct": 833,
+        "changed_correct": 833,
+        "net_correct": 0,
+        "native_accuracy": 0.20292326431181487,
+        "changed_accuracy": 0.20292326431181487,
+        "delta_fraction": 0.0,
+        "delta_percentage_points": 0.0,
+        "relative_improvement_percent": 0.0,
+        "paired_image_95ci_pp": [
+          0.0,
+          0.0
+        ],
+        "valid_bootstrap_draws": 2000,
+        "requested_bootstrap_draws": 2000,
+        "interval_scope": "Descriptive, conditional on fitted/selected models; no selection or multiplicity correction"
+      }
+    },
+    "adapt_diagnostic_versus_native": {
+      "pre_nms": {
+        "images": 600,
+        "denominator": 10620,
+        "native_correct": 8015,
+        "changed_correct": 8015,
+        "net_correct": 0,
+        "native_accuracy": 0.754708097928437,
+        "changed_accuracy": 0.754708097928437,
+        "delta_fraction": 0.0,
+        "delta_percentage_points": 0.0,
+        "relative_improvement_percent": 0.0,
+        "paired_image_95ci_pp": [
+          0.0,
+          0.0
+        ],
+        "valid_bootstrap_draws": 2000,
+        "requested_bootstrap_draws": 2000,
+        "interval_scope": "Descriptive, conditional on fitted/selected models; no selection or multiplicity correction"
+      },
+      "post_nms": {
+        "images": 600,
+        "denominator": 10620,
+        "native_correct": 5307,
+        "changed_correct": 5307,
+        "net_correct": 0,
+        "native_accuracy": 0.49971751412429377,
+        "changed_accuracy": 0.49971751412429377,
+        "delta_fraction": 0.0,
+        "delta_percentage_points": 0.0,
+        "relative_improvement_percent": 0.0,
+        "paired_image_95ci_pp": [
+          0.0,
+          0.0
+        ],
+        "valid_bootstrap_draws": 2000,
+        "requested_bootstrap_draws": 2000,
+        "interval_scope": "Descriptive, conditional on fitted/selected models; no selection or multiplicity correction"
+      },
+      "unique_post": {
+        "images": 600,
+        "denominator": 6012,
+        "native_correct": 4321,
+        "changed_correct": 4321,
+        "net_correct": 0,
+        "native_accuracy": 0.7187292082501663,
+        "changed_accuracy": 0.7187292082501663,
+        "delta_fraction": 0.0,
+        "delta_percentage_points": 0.0,
+        "relative_improvement_percent": 0.0,
+        "paired_image_95ci_pp": [
+          0.0,
+          0.0
+        ],
+        "valid_bootstrap_draws": 2000,
+        "requested_bootstrap_draws": 2000,
+        "interval_scope": "Descriptive, conditional on fitted/selected models; no selection or multiplicity correction"
+      },
+      "native_top50_endpoint": {
+        "images": 600,
+        "denominator": 6515,
+        "native_correct": 4474,
+        "changed_correct": 4474,
+        "net_correct": 0,
+        "native_accuracy": 0.6867229470452801,
+        "changed_accuracy": 0.6867229470452801,
+        "delta_fraction": 0.0,
+        "delta_percentage_points": 0.0,
+        "relative_improvement_percent": 0.0,
+        "paired_image_95ci_pp": [
+          0.0,
+          0.0
+        ],
+        "valid_bootstrap_draws": 2000,
+        "requested_bootstrap_draws": 2000,
+        "interval_scope": "Descriptive, conditional on fitted/selected models; no selection or multiplicity correction"
+      },
+      "not_native_top50_endpoint": {
+        "images": 600,
+        "denominator": 4105,
+        "native_correct": 833,
+        "changed_correct": 833,
+        "net_correct": 0,
+        "native_accuracy": 0.20292326431181487,
+        "changed_accuracy": 0.20292326431181487,
+        "delta_fraction": 0.0,
+        "delta_percentage_points": 0.0,
+        "relative_improvement_percent": 0.0,
+        "paired_image_95ci_pp": [
+          0.0,
+          0.0
+        ],
+        "valid_bootstrap_draws": 2000,
+        "requested_bootstrap_draws": 2000,
+        "interval_scope": "Descriptive, conditional on fitted/selected models; no selection or multiplicity correction"
+      }
+    },
+    "adapt_plain_versus_frozen_head": {
+      "pre_nms": {
+        "images": 600,
+        "denominator": 10620,
+        "native_correct": 8015,
+        "changed_correct": 8015,
+        "net_correct": 0,
+        "native_accuracy": 0.754708097928437,
+        "changed_accuracy": 0.754708097928437,
+        "delta_fraction": 0.0,
+        "delta_percentage_points": 0.0,
+        "relative_improvement_percent": 0.0,
+        "paired_image_95ci_pp": [
+          0.0,
+          0.0
+        ],
+        "valid_bootstrap_draws": 2000,
+        "requested_bootstrap_draws": 2000,
+        "interval_scope": "Descriptive, conditional on fitted/selected models; no selection or multiplicity correction"
+      },
+      "post_nms": {
+        "images": 600,
+        "denominator": 10620,
+        "native_correct": 5307,
+        "changed_correct": 5307,
+        "net_correct": 0,
+        "native_accuracy": 0.49971751412429377,
+        "changed_accuracy": 0.49971751412429377,
+        "delta_fraction": 0.0,
+        "delta_percentage_points": 0.0,
+        "relative_improvement_percent": 0.0,
+        "paired_image_95ci_pp": [
+          0.0,
+          0.0
+        ],
+        "valid_bootstrap_draws": 2000,
+        "requested_bootstrap_draws": 2000,
+        "interval_scope": "Descriptive, conditional on fitted/selected models; no selection or multiplicity correction"
+      },
+      "unique_post": {
+        "images": 600,
+        "denominator": 6012,
+        "native_correct": 4321,
+        "changed_correct": 4321,
+        "net_correct": 0,
+        "native_accuracy": 0.7187292082501663,
+        "changed_accuracy": 0.7187292082501663,
+        "delta_fraction": 0.0,
+        "delta_percentage_points": 0.0,
+        "relative_improvement_percent": 0.0,
+        "paired_image_95ci_pp": [
+          0.0,
+          0.0
+        ],
+        "valid_bootstrap_draws": 2000,
+        "requested_bootstrap_draws": 2000,
+        "interval_scope": "Descriptive, conditional on fitted/selected models; no selection or multiplicity correction"
+      },
+      "native_top50_endpoint": {
+        "images": 600,
+        "denominator": 6515,
+        "native_correct": 4474,
+        "changed_correct": 4474,
+        "net_correct": 0,
+        "native_accuracy": 0.6867229470452801,
+        "changed_accuracy": 0.6867229470452801,
+        "delta_fraction": 0.0,
+        "delta_percentage_points": 0.0,
+        "relative_improvement_percent": 0.0,
+        "paired_image_95ci_pp": [
+          0.0,
+          0.0
+        ],
+        "valid_bootstrap_draws": 2000,
+        "requested_bootstrap_draws": 2000,
+        "interval_scope": "Descriptive, conditional on fitted/selected models; no selection or multiplicity correction"
+      },
+      "not_native_top50_endpoint": {
+        "images": 600,
+        "denominator": 4105,
+        "native_correct": 833,
+        "changed_correct": 833,
+        "net_correct": 0,
+        "native_accuracy": 0.20292326431181487,
+        "changed_accuracy": 0.20292326431181487,
+        "delta_fraction": 0.0,
+        "delta_percentage_points": 0.0,
+        "relative_improvement_percent": 0.0,
+        "paired_image_95ci_pp": [
+          0.0,
+          0.0
+        ],
+        "valid_bootstrap_draws": 2000,
+        "requested_bootstrap_draws": 2000,
+        "interval_scope": "Descriptive, conditional on fitted/selected models; no selection or multiplicity correction"
+      }
+    },
+    "adapt_diagnostic_versus_adapt_plain": {
+      "pre_nms": {
+        "images": 600,
+        "denominator": 10620,
+        "native_correct": 8015,
+        "changed_correct": 8015,
+        "net_correct": 0,
+        "native_accuracy": 0.754708097928437,
+        "changed_accuracy": 0.754708097928437,
+        "delta_fraction": 0.0,
+        "delta_percentage_points": 0.0,
+        "relative_improvement_percent": 0.0,
+        "paired_image_95ci_pp": [
+          0.0,
+          0.0
+        ],
+        "valid_bootstrap_draws": 2000,
+        "requested_bootstrap_draws": 2000,
+        "interval_scope": "Descriptive, conditional on fitted/selected models; no selection or multiplicity correction"
+      },
+      "post_nms": {
+        "images": 600,
+        "denominator": 10620,
+        "native_correct": 5307,
+        "changed_correct": 5307,
+        "net_correct": 0,
+        "native_accuracy": 0.49971751412429377,
+        "changed_accuracy": 0.49971751412429377,
+        "delta_fraction": 0.0,
+        "delta_percentage_points": 0.0,
+        "relative_improvement_percent": 0.0,
+        "paired_image_95ci_pp": [
+          0.0,
+          0.0
+        ],
+        "valid_bootstrap_draws": 2000,
+        "requested_bootstrap_draws": 2000,
+        "interval_scope": "Descriptive, conditional on fitted/selected models; no selection or multiplicity correction"
+      },
+      "unique_post": {
+        "images": 600,
+        "denominator": 6012,
+        "native_correct": 4321,
+        "changed_correct": 4321,
+        "net_correct": 0,
+        "native_accuracy": 0.7187292082501663,
+        "changed_accuracy": 0.7187292082501663,
+        "delta_fraction": 0.0,
+        "delta_percentage_points": 0.0,
+        "relative_improvement_percent": 0.0,
+        "paired_image_95ci_pp": [
+          0.0,
+          0.0
+        ],
+        "valid_bootstrap_draws": 2000,
+        "requested_bootstrap_draws": 2000,
+        "interval_scope": "Descriptive, conditional on fitted/selected models; no selection or multiplicity correction"
+      },
+      "native_top50_endpoint": {
+        "images": 600,
+        "denominator": 6515,
+        "native_correct": 4474,
+        "changed_correct": 4474,
+        "net_correct": 0,
+        "native_accuracy": 0.6867229470452801,
+        "changed_accuracy": 0.6867229470452801,
+        "delta_fraction": 0.0,
+        "delta_percentage_points": 0.0,
+        "relative_improvement_percent": 0.0,
+        "paired_image_95ci_pp": [
+          0.0,
+          0.0
+        ],
+        "valid_bootstrap_draws": 2000,
+        "requested_bootstrap_draws": 2000,
+        "interval_scope": "Descriptive, conditional on fitted/selected models; no selection or multiplicity correction"
+      },
+      "not_native_top50_endpoint": {
+        "images": 600,
+        "denominator": 4105,
+        "native_correct": 833,
+        "changed_correct": 833,
+        "net_correct": 0,
+        "native_accuracy": 0.20292326431181487,
+        "changed_accuracy": 0.20292326431181487,
+        "delta_fraction": 0.0,
+        "delta_percentage_points": 0.0,
+        "relative_improvement_percent": 0.0,
+        "paired_image_95ci_pp": [
+          0.0,
+          0.0
+        ],
+        "valid_bootstrap_draws": 2000,
+        "requested_bootstrap_draws": 2000,
+        "interval_scope": "Descriptive, conditional on fitted/selected models; no selection or multiplicity correction"
+      }
+    }
+  },
+  "primary_exploratory_numerical_screen": false,
+  "original_confirmation_min_images": 1000,
+  "confirmation_coverage_satisfied": false,
+  "formal_gate_accepted": false,
+  "independent_confirmation": false,
+  "validation_accessed": false,
+  "test_accessed": false,
+  "reused_train_images": true,
+  "native_sgg_trained_on_these_images": true,
+  "next_step": "Stop. No test, fresh gate, seed expansion or control promotion automatically."
+}

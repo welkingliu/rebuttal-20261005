@@ -1,0 +1,221 @@
+{
+  "status": "complete",
+  "protocol": {
+    "images": 64,
+    "seeds": [
+      17,
+      23,
+      31
+    ],
+    "modes": [
+      "supervised_control",
+      "grounding"
+    ],
+    "source_sha256": {
+      "/mnt/EXPERIMENT_DISK/kdd_sgg_core_experiments/sgg_core/models/adapters/pysgg_live.py": "53f52496534a40e21aead747a23c1ae56fb40592145bb7cf76ca8a28c54e5404",
+      "/mnt/EXPERIMENT_DISK/kdd_sgg_core_experiments/sgg_core/mitigation/grounding_regularizer.py": "a5a4b258209d973b1be50e4f5bf9468c587b7fd475db09fc292173dc731f9c96",
+      "/mnt/EXPERIMENT_DISK/kdd_sgg_core_experiments/sgg_core/mitigation/run_mitigation.py": "6868922031e280cf8cc4d5a8c0c616d55cc1eac999bee5d6dab08f666944a8d5",
+      "/mnt/EXPERIMENT_DISK/kdd_sgg_rebuttal_20260929/imported/anonymous_release_20260929/scripts/run_paper_experiment5_tde_motifs.py": "ab2260df9042bc89af38cb0556fbf83bfa176b7e69501d6b3bc3fcdc2f416738"
+    },
+    "code_sha256": "ad3b8abe58f3d4b99cdf41ad4389bc5117b024674dbb85066bdafab3c27d3274",
+    "interpretation": "Real-input gradient audit at saved states; not a replay of historical optimizer steps",
+    "object_weight": 2.25,
+    "calibration_weight": 0.05,
+    "mask_logits": false,
+    "task_object_weight": 3.0,
+    "object_margin_weight": 0.0,
+    "weight_decay": 0.0001
+  },
+  "records": 384,
+  "history_checks": [
+    {
+      "mode": "supervised_control",
+      "seed": 17,
+      "epoch": 1,
+      "recorded": 4.347280534207821,
+      "reconstructed": 4.347280534155853,
+      "absolute_error": 5.196731933665433e-11,
+      "object_only": true,
+      "checkpoint_sha256": "e29c5a8d4ca2357532ae6549a3fdbc0a15e284e683667f3f89cff7d64f596b0a"
+    },
+    {
+      "mode": "supervised_control",
+      "seed": 17,
+      "epoch": 2,
+      "recorded": 3.972899027401209,
+      "reconstructed": 3.972899026981322,
+      "absolute_error": 4.1988679200244405e-10,
+      "object_only": true,
+      "checkpoint_sha256": "e29c5a8d4ca2357532ae6549a3fdbc0a15e284e683667f3f89cff7d64f596b0a"
+    },
+    {
+      "mode": "supervised_control",
+      "seed": 17,
+      "epoch": 3,
+      "recorded": 3.900055764055252,
+      "reconstructed": 3.900055766810407,
+      "absolute_error": 2.7551552150839598e-09,
+      "object_only": true,
+      "checkpoint_sha256": "e29c5a8d4ca2357532ae6549a3fdbc0a15e284e683667f3f89cff7d64f596b0a"
+    },
+    {
+      "mode": "supervised_control",
+      "seed": 23,
+      "epoch": 1,
+      "recorded": 4.34917502900958,
+      "reconstructed": 4.349175026777433,
+      "absolute_error": 2.2321469117514425e-09,
+      "object_only": true,
+      "checkpoint_sha256": "02af8f737cb14f653635dbe1ab477b90e8d72b1a5aea8a6ec028aceb6077a92b"
+    },
+    {
+      "mode": "supervised_control",
+      "seed": 23,
+      "epoch": 2,
+      "recorded": 3.972734085664153,
+      "reconstructed": 3.9727340853648263,
+      "absolute_error": 2.993267855799786e-10,
+      "object_only": true,
+      "checkpoint_sha256": "02af8f737cb14f653635dbe1ab477b90e8d72b1a5aea8a6ec028aceb6077a92b"
+    },
+    {
+      "mode": "supervised_control",
+      "seed": 23,
+      "epoch": 3,
+      "recorded": 3.898185417678952,
+      "reconstructed": 3.8981854180106428,
+      "absolute_error": 3.316906749262216e-10,
+      "object_only": true,
+      "checkpoint_sha256": "02af8f737cb14f653635dbe1ab477b90e8d72b1a5aea8a6ec028aceb6077a92b"
+    },
+    {
+      "mode": "supervised_control",
+      "seed": 31,
+      "epoch": 1,
+      "recorded": 4.349942178362608,
+      "reconstructed": 4.349942178175598,
+      "absolute_error": 1.8700951898154017e-10,
+      "object_only": true,
+      "checkpoint_sha256": "d667c7c3851e648bd23e244014a042a81a081d15754ad531deac30c9b64d2540"
+    },
+    {
+      "mode": "supervised_control",
+      "seed": 31,
+      "epoch": 2,
+      "recorded": 3.969373477220535,
+      "reconstructed": 3.9693734763384327,
+      "absolute_error": 8.821023911309567e-10,
+      "object_only": true,
+      "checkpoint_sha256": "d667c7c3851e648bd23e244014a042a81a081d15754ad531deac30c9b64d2540"
+    },
+    {
+      "mode": "supervised_control",
+      "seed": 31,
+      "epoch": 3,
+      "recorded": 3.899943353706598,
+      "reconstructed": 3.8999433539885797,
+      "absolute_error": 2.8198154922165486e-10,
+      "object_only": true,
+      "checkpoint_sha256": "d667c7c3851e648bd23e244014a042a81a081d15754ad531deac30c9b64d2540"
+    },
+    {
+      "mode": "grounding",
+      "seed": 17,
+      "epoch": 1,
+      "recorded": 4.371594017350674,
+      "reconstructed": 4.371594014948642,
+      "absolute_error": 2.4020314626227446e-09,
+      "object_only": true,
+      "checkpoint_sha256": "6d367ecc97781353f9c2b76b52bf5a0494dee492aa6458a13273b883d5841b61"
+    },
+    {
+      "mode": "grounding",
+      "seed": 17,
+      "epoch": 2,
+      "recorded": 3.9936395957916977,
+      "reconstructed": 3.993639592731248,
+      "absolute_error": 3.0604496714659035e-09,
+      "object_only": true,
+      "checkpoint_sha256": "6d367ecc97781353f9c2b76b52bf5a0494dee492aa6458a13273b883d5841b61"
+    },
+    {
+      "mode": "grounding",
+      "seed": 17,
+      "epoch": 3,
+      "recorded": 3.920524211728573,
+      "reconstructed": 3.9205242096258113,
+      "absolute_error": 2.1027615204616268e-09,
+      "object_only": true,
+      "checkpoint_sha256": "6d367ecc97781353f9c2b76b52bf5a0494dee492aa6458a13273b883d5841b61"
+    },
+    {
+      "mode": "grounding",
+      "seed": 23,
+      "epoch": 1,
+      "recorded": 4.373689078664779,
+      "reconstructed": 4.373689077051801,
+      "absolute_error": 1.6129781954532518e-09,
+      "object_only": true,
+      "checkpoint_sha256": "59e3975668b799ab1312232480faa69369768c5fb722d66ae35d01b2febfaa03"
+    },
+    {
+      "mode": "grounding",
+      "seed": 23,
+      "epoch": 2,
+      "recorded": 3.9935458811998368,
+      "reconstructed": 3.9935458714754892,
+      "absolute_error": 9.724347549422419e-09,
+      "object_only": true,
+      "checkpoint_sha256": "59e3975668b799ab1312232480faa69369768c5fb722d66ae35d01b2febfaa03"
+    },
+    {
+      "mode": "grounding",
+      "seed": 23,
+      "epoch": 3,
+      "recorded": 3.918627918574214,
+      "reconstructed": 3.918627917352423,
+      "absolute_error": 1.221790668637368e-09,
+      "object_only": true,
+      "checkpoint_sha256": "59e3975668b799ab1312232480faa69369768c5fb722d66ae35d01b2febfaa03"
+    },
+    {
+      "mode": "grounding",
+      "seed": 31,
+      "epoch": 1,
+      "recorded": 4.374502058118582,
+      "reconstructed": 4.374502056204905,
+      "absolute_error": 1.9136763285132474e-09,
+      "object_only": true,
+      "checkpoint_sha256": "05e040ec3643ef5a16ace28af382f02179f4519c782d5eadc60b3354c2290c8b"
+    },
+    {
+      "mode": "grounding",
+      "seed": 31,
+      "epoch": 2,
+      "recorded": 3.9900905350089073,
+      "reconstructed": 3.9900905348912534,
+      "absolute_error": 1.1765388663320664e-10,
+      "object_only": true,
+      "checkpoint_sha256": "05e040ec3643ef5a16ace28af382f02179f4519c782d5eadc60b3354c2290c8b"
+    },
+    {
+      "mode": "grounding",
+      "seed": 31,
+      "epoch": 3,
+      "recorded": 3.9202528885096313,
+      "reconstructed": 3.9202528899741926,
+      "absolute_error": 1.4645613610753117e-09,
+      "object_only": true,
+      "checkpoint_sha256": "05e040ec3643ef5a16ace28af382f02179f4519c782d5eadc60b3354c2290c8b"
+    }
+  ],
+  "max_history_reconstruction_error": 9.724347549422419e-09,
+  "max_gradient_equivalence_error": 0.0,
+  "findings": [
+    "Only the shared 151x151 object affine readout receives updates (22952 parameters).",
+    "The effective grounding gradient is 2.25 * task-weighted object CE + 0.05 * object Brier.",
+    "Relation supervision, relation consistency, dependency and confidence penalties have zero object gradient.",
+    "Mask consistency is absent; the logged margin is multiplied by zero.",
+    "No end-to-end grounding or relation-protective training gradient is implemented in this original run."
+  ]
+}

@@ -1,0 +1,8 @@
+-r requirements.txt
+
+# OpenAI CLIP is not the unrelated package named "clip" on PyPI.
+git+https://github.com/openai/CLIP.git
+
+# Generative VLM controls; these are not required for standard SGG metrics.
+accelerate>=1.0
+qwen-vl-utils==0.0.14

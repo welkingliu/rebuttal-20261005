@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kdd-sgg-core-experiments"
+version = "1.0.0"
+description = "Compute-aware five-experiment audit for scene graph generation"
+requires-python = ">=3.10"
+dependencies = [
+  "torch>=2.3",
+  "torchvision>=0.18",
+  "numpy>=1.24,<3",
+  "tqdm>=4.66",
+  "pillow>=10",
+  "PyYAML>=6",
+  "h5py>=3.6",
+  "timm>=1.0.20,<2",
+  "transformers>=4.57,<6",
+  "huggingface-hub>=0.30",
+  "safetensors>=0.4",
+  "einops>=0.7",
+  "gdown>=5.2,<6",
+  "dill>=0.3.8,<1",
+]
+
+[tool.setuptools.packages.find]
+include = ["sgg_core*"]

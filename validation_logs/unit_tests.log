@@ -1,0 +1,78 @@
+..........  [GQA] graphs=1 objects=2 predicates=1 skipped_missing_images=0
+  [GQA] graphs=1 objects=2 predicates=1 skipped_missing_images=0
+  [GQA] graphs=1 objects=2 predicates=1 skipped_missing_images=0
+  [GQA] graphs=1 objects=2 predicates=1 skipped_missing_images=1
+  [PSG] graphs=1 objects=2 predicates=1 excluded_ids=0 skipped_missing_images=1
+  [PSG] graphs=1 objects=2 predicates=60 excluded_ids=0 skipped_missing_images=0
+  [VRD] split=test graphs=1 root=/var/folders/0q/ldgqrc1926z6_wblqgn6k6hc0000gn/T/tmp0uo7_ws9
+  [OIIndex] Parsing oidv6-validation-annotations-vrd.csv …
+.....  [OIIndex] 1 images, 1 relation rows loaded, 0 non-SGG rows skipped.
+  [OI] 1 images  entities=3  predicates=2  feature_mode=annotation_only
+  [ok] psg raw images: 1/1 missing=0 invalid=0
+         deterministic selection skipped 1 unavailable PSG images
+  [miss] psg raw images: 1/2 missing=1 invalid=0
+  [OIIndex] Parsing oidv6-validation-annotations-vrd.csv …
+.......  [OIIndex] 1 images, 1 relation rows loaded, 0 non-SGG rows skipped.
+  [OI] 1 images  entities=3  predicates=2  feature_mode=annotation_only
+/path/to/local_user/miniconda3/envs/sgg_proj/lib/python3.14/site-packages/tqdm/std.py:465: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  if rate and total else datetime.utcfromtimestamp(0))
+
+  [GroundingDecomp] fake:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                               
+.
+  [GroundingDecomp] fake:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                               
+....[Backbone] Loading cradio_v4_so400m from local_dir=/var/folders/0q/ldgqrc1926z6_wblqgn6k6hc0000gn/T/tmpa720svs0/checkpoints/foundation/hf_models/cradio_v4_so400m
+[download] nvidia/C-RADIOv4-SO400M@c0457f5dc26ca145f954cd4fc5bb6114e5705ad8
+.............[Backbone] Loading dinov2_vitb14 from local repo=/var/folders/0q/ldgqrc1926z6_wblqgn6k6hc0000gn/T/tmp5jyookm1/external/foundation_repos/dinov2 weights=/var/folders/0q/ldgqrc1926z6_wblqgn6k6hc0000gn/T/tmp5jyookm1/checkpoints/foundation/dinov2/dinov2_vitb14_pretrain.pth
+[Backbone] Loading dinov3_b from local_dir=/var/folders/0q/ldgqrc1926z6_wblqgn6k6hc0000gn/T/tmphaedmfct/checkpoints/foundation/hf_models/dinov3_b
+[Backbone] Loading RADIOv2.5-B from local repo=/var/folders/0q/ldgqrc1926z6_wblqgn6k6hc0000gn/T/tmpfaerebu_/external/foundation_repos/radio weights=/var/folders/0q/ldgqrc1926z6_wblqgn6k6hc0000gn/T/tmpfaerebu_/checkpoints/foundation/radio/radio-v2.5-b_half.pth.tar
+[Backbone] Loading sam_vit_b from local_dir=/var/folders/0q/ldgqrc1926z6_wblqgn6k6hc0000gn/T/tmpk7nb0k7e/checkpoints/foundation/hf_models/sam_vit_b
+[Backbone] Loading siglip2_b from local_dir=/var/folders/0q/ldgqrc1926z6_wblqgn6k6hc0000gn/T/tmp5neav8jk/checkpoints/foundation/hf_models/siglip2_b
+[download] google/siglip2-base-patch16-224@75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2
+..
+  [LiveValidation:sgcls] live-test:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                                         
+...................
+  [ObjectPropagation:sgcls] model:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                                        
+...................  [PSG] graphs=1 objects=2 predicates=1 excluded_ids=0 skipped_missing_images=0
+
+  [PairAudit] stable:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                           
+....
+  [DoseAudit] stable:   0%|          | 0/2 [00:00<?, ?it/s]
+                                                           
+..  [GraphAudit] Mining top-2 motifs from training data (10 batches max)…
+  [GraphAudit] Mined 2 motifs. Top 10:
+    [ 1] (1, 1, 2)  ids=(1,1,2)
+    [ 2] (1, 2, 3)  ids=(1,2,3)
+
+  [GraphAudit] stable:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                            
+.....
+  [StandardSGG:joint] joint:   0%|          | 0/2 [00:00<?, ?it/s]
+                                                                  
+..
+  [StandardSGG:predcls] perfect:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                                      
+
+  [StandardSGG:sgcls] perfect:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                                    
+
+  [StandardSGG:sgdet] perfect:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                                    
+.
+  [StandardSGG:predcls] mixed:   0%|          | 0/2 [00:00<?, ?it/s]
+                                                                    
+.
+  [StandardSGG:sgdet] bad_boxes:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                                      
+.
+  [StandardSGG:sgdet] sgdet_only:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                                       
+.........
+----------------------------------------------------------------------
+Ran 105 tests in 0.525s
+
+OK

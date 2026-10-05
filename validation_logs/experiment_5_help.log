@@ -1,0 +1,139 @@
+usage: python -m sgg_core.experiments.experiment_5 [-h] --manifest MANIFEST
+                                                   --dataset {vg}
+                                                   [--data_root DATA_ROOT]
+                                                   [--train_ann TRAIN_ANN]
+                                                   [--eval_ann EVAL_ANN]
+                                                   [--image_root IMAGE_ROOT]
+                                                   [--panoptic_root PANOPTIC_ROOT]
+                                                   --output_dir OUTPUT_DIR
+                                                   [--epochs EPOCHS]
+                                                   [--minimum_epochs MINIMUM_EPOCHS]
+                                                   [--early_stopping_patience EARLY_STOPPING_PATIENCE]
+                                                   [--train_samples TRAIN_SAMPLES]
+                                                   [--eval_samples EVAL_SAMPLES]
+                                                   [--test_samples TEST_SAMPLES]
+                                                   [--skip_test]
+                                                   [--before_test_cache BEFORE_TEST_CACHE]
+                                                   [--learning_rate LEARNING_RATE]
+                                                   [--weight_decay WEIGHT_DECAY]
+                                                   [--mild_noise MILD_NOISE]
+                                                   [--training_mode {supervised_control,grounding}]
+                                                   [--seed SEED]
+                                                   [--device DEVICE]
+                                                   [--recall_ks RECALL_KS [RECALL_KS ...]]
+                                                   [--max_mr_drop MAX_MR_DROP]
+                                                   [--stop_on_mr_drop]
+                                                   [--minimum_object_top1_gain MINIMUM_OBJECT_TOP1_GAIN]
+                                                   [--max_object_ece_increase MAX_OBJECT_ECE_INCREASE]
+                                                   [--minimum_validation_objects MINIMUM_VALIDATION_OBJECTS]
+                                                   [--gradient_accumulation_steps GRADIENT_ACCUMULATION_STEPS]
+                                                   [--object_weight OBJECT_WEIGHT]
+                                                   [--object_consistency_weight OBJECT_CONSISTENCY_WEIGHT]
+                                                   [--object_calibration_weight OBJECT_CALIBRATION_WEIGHT]
+                                                   [--object_focal_gamma OBJECT_FOCAL_GAMMA]
+                                                   [--object_margin_weight OBJECT_MARGIN_WEIGHT]
+                                                   [--object_margin OBJECT_MARGIN]
+                                                   [--hard_object_fraction HARD_OBJECT_FRACTION]
+                                                   [--validation_interval_images VALIDATION_INTERVAL_IMAGES]
+                                                   [--progress_interval_images PROGRESS_INTERVAL_IMAGES]
+                                                   [--task_driven_object_focus]
+                                                   [--task_object_weight TASK_OBJECT_WEIGHT]
+                                                   [--task_predicate_ids TASK_PREDICATE_IDS [TASK_PREDICATE_IDS ...]]
+                                                   [--freeze_relation_parameters]
+                                                   [--object_bias_only]
+                                                   [--object_weight_delta_scale OBJECT_WEIGHT_DELTA_SCALE]
+                                                   [--object_bias_delta_scale OBJECT_BIAS_DELTA_SCALE]
+                                                   [--amp | --no-amp]
+                                                   [--run_appendix_audits]
+
+Grounding-aware SGG mitigation
+
+options:
+  -h, --help            show this help message and exit
+  --manifest MANIFEST
+  --dataset {vg}
+  --data_root DATA_ROOT
+  --train_ann TRAIN_ANN
+  --eval_ann EVAL_ANN
+  --image_root IMAGE_ROOT
+  --panoptic_root PANOPTIC_ROOT
+  --output_dir OUTPUT_DIR
+  --epochs EPOCHS       Maximum number of mitigation epochs.
+  --minimum_epochs MINIMUM_EPOCHS
+                        Do not apply validation early stopping before this
+                        epoch.
+  --early_stopping_patience EARLY_STOPPING_PATIENCE
+                        Stop after this many non-improving validation epochs.
+  --train_samples TRAIN_SAMPLES
+  --eval_samples EVAL_SAMPLES
+  --test_samples TEST_SAMPLES
+                        VG uses the complete untouched split-2 test by
+                        default.
+  --skip_test           Run the validation gate without evaluating the
+                        untouched test split.
+  --before_test_cache BEFORE_TEST_CACHE
+                        Optional family-level cache for the unchanged
+                        pretrained test evaluation. Formal matrix runs share
+                        this baseline across modes and seeds while always
+                        recomputing the post-training test result.
+  --learning_rate LEARNING_RATE
+  --weight_decay WEIGHT_DECAY
+  --mild_noise MILD_NOISE
+  --training_mode {supervised_control,grounding}
+                        supervised_control uses the same relation/object
+                        supervision and training budget without the proposed
+                        regularizers.
+  --seed SEED
+  --device DEVICE
+  --recall_ks RECALL_KS [RECALL_KS ...]
+  --max_mr_drop MAX_MR_DROP
+  --stop_on_mr_drop     Stop after validation exceeds max_mr_drop and restore
+                        the best task-preserving epoch.
+  --minimum_object_top1_gain MINIMUM_OBJECT_TOP1_GAIN
+  --max_object_ece_increase MAX_OBJECT_ECE_INCREASE
+  --minimum_validation_objects MINIMUM_VALIDATION_OBJECTS
+  --gradient_accumulation_steps GRADIENT_ACCUMULATION_STEPS
+  --object_weight OBJECT_WEIGHT
+  --object_consistency_weight OBJECT_CONSISTENCY_WEIGHT
+  --object_calibration_weight OBJECT_CALIBRATION_WEIGHT
+  --object_focal_gamma OBJECT_FOCAL_GAMMA
+                        Focal exponent for low-confidence object supervision.
+  --object_margin_weight OBJECT_MARGIN_WEIGHT
+                        Weight for hard-object logit margin supervision.
+  --object_margin OBJECT_MARGIN
+  --hard_object_fraction HARD_OBJECT_FRACTION
+                        Fraction of objects with the largest margin violations
+                        to optimize.
+  --validation_interval_images VALIDATION_INTERVAL_IMAGES
+                        Run checkpoint selection after this many training
+                        images inside each epoch; zero keeps epoch-only
+                        selection.
+  --progress_interval_images PROGRESS_INTERVAL_IMAGES
+                        Emit a structured training progress event after this
+                        many valid training images; zero disables interval
+                        events.
+  --task_driven_object_focus
+                        Upweight objects participating in task-relevant
+                        relations while retaining supervision for every
+                        annotated relation.
+  --task_object_weight TASK_OBJECT_WEIGHT
+  --task_predicate_ids TASK_PREDICATE_IDS [TASK_PREDICATE_IDS ...]
+                        VG predicate ids treated as downstream
+                        interaction/affordance tasks.
+  --freeze_relation_parameters
+                        Update only the object parameter group during
+                        mitigation.
+  --object_bias_only    Within the object parameter group, freeze matrix
+                        parameters and optimize only the one-dimensional class
+                        bias.
+  --object_weight_delta_scale OBJECT_WEIGHT_DELTA_SCALE
+                        Fixed post-selection scale for object-head non-bias
+                        deltas.
+  --object_bias_delta_scale OBJECT_BIAS_DELTA_SCALE
+                        Fixed post-selection scale for object-head bias
+                        deltas.
+  --amp
+  --no-amp
+  --run_appendix_audits
+                        Also run the expensive BRR and motif audits
+                        before/after training.

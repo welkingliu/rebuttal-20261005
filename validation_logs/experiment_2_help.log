@@ -1,0 +1,62 @@
+usage: python -m sgg_core.experiments.experiment_2 [-h]
+                                                   --dataset {vg,oi,gqa,psg,vrd}
+                                                   --data_root DATA_ROOT
+                                                   [--train_ann TRAIN_ANN]
+                                                   [--eval_ann EVAL_ANN]
+                                                   [--image_root IMAGE_ROOT]
+                                                   [--panoptic_root PANOPTIC_ROOT]
+                                                   [--official_manifest OFFICIAL_MANIFEST]
+                                                   --output_dir OUTPUT_DIR
+                                                   [--analysis_scope {observational,interventional,both}]
+                                                   [--train_samples TRAIN_SAMPLES]
+                                                   [--eval_samples EVAL_SAMPLES]
+                                                   [--pair_hit_ks PAIR_HIT_KS [PAIR_HIT_KS ...]]
+                                                   [--primary_k PRIMARY_K]
+                                                   [--perturbation_levels PERTURBATION_LEVELS [PERTURBATION_LEVELS ...]]
+                                                   [--perturbation_strategies PERTURBATION_STRATEGIES [PERTURBATION_STRATEGIES ...]]
+                                                   [--perturbation_seeds PERTURBATION_SEEDS [PERTURBATION_SEEDS ...]]
+                                                   [--minimum_relations MINIMUM_RELATIONS]
+                                                   [--minimum_clean_recall MINIMUM_CLEAN_RECALL]
+                                                   [--minimum_pvr_checked MINIMUM_PVR_CHECKED]
+                                                   [--skip_pair_audit]
+                                                   [--skip_physical_consistency]
+                                                   [--seed SEED]
+                                                   [--device DEVICE]
+
+Experiment II: real-checkpoint pair grounding and prior-dependence audit. This
+paper entry point refuses surrogate or randomly initialized models. The former
+GT-injected simulator is intentionally absent from this core package.
+
+options:
+  -h, --help            show this help message and exit
+  --dataset {vg,oi,gqa,psg,vrd}
+  --data_root DATA_ROOT
+  --train_ann TRAIN_ANN
+  --eval_ann EVAL_ANN
+  --image_root IMAGE_ROOT
+  --panoptic_root PANOPTIC_ROOT
+  --official_manifest OFFICIAL_MANIFEST
+  --output_dir OUTPUT_DIR
+  --analysis_scope {observational,interventional,both}
+                        observational reuses SGCls/SGDet predictions for
+                        endpoint-error stratification; interventional requires
+                        a GT-pair live adapter
+  --train_samples TRAIN_SAMPLES
+  --eval_samples EVAL_SAMPLES
+  --pair_hit_ks PAIR_HIT_KS [PAIR_HIT_KS ...]
+                        Predicate Hit@K on GT pairs; this is not image-level
+                        SGG Recall@K.
+  --primary_k PRIMARY_K
+  --perturbation_levels PERTURBATION_LEVELS [PERTURBATION_LEVELS ...]
+  --perturbation_strategies PERTURBATION_STRATEGIES [PERTURBATION_STRATEGIES ...]
+  --perturbation_seeds PERTURBATION_SEEDS [PERTURBATION_SEEDS ...]
+  --minimum_relations MINIMUM_RELATIONS
+  --minimum_clean_recall MINIMUM_CLEAN_RECALL
+  --minimum_pvr_checked MINIMUM_PVR_CHECKED
+  --skip_pair_audit     Skip the duplicate terminal BRR audit when the dose
+                        sweep is primary.
+  --skip_physical_consistency
+                        Skip PVR in the converged object-error propagation
+                        experiment.
+  --seed SEED
+  --device DEVICE

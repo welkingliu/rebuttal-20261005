@@ -1,0 +1,88 @@
+usage: python -m sgg_core.experiments.experiment_4 [-h]
+                                                   [--datasets {vg,oi,gqa,psg,vrd} [{vg,oi,gqa,psg,vrd} ...]]
+                                                   [--vg_root VG_ROOT]
+                                                   [--oi_root OI_ROOT]
+                                                   [--gqa_train_ann GQA_TRAIN_ANN]
+                                                   [--gqa_eval_ann GQA_EVAL_ANN]
+                                                   [--gqa_image_root GQA_IMAGE_ROOT]
+                                                   [--psg_train_ann PSG_TRAIN_ANN]
+                                                   [--psg_eval_ann PSG_EVAL_ANN]
+                                                   [--psg_image_root PSG_IMAGE_ROOT]
+                                                   [--psg_panoptic_root PSG_PANOPTIC_ROOT]
+                                                   [--vrd_root VRD_ROOT]
+                                                   [--official_manifest OFFICIAL_MANIFEST]
+                                                   [--manifest_dir MANIFEST_DIR]
+                                                   [--model_panel MODEL_PANEL]
+                                                   --output_dir OUTPUT_DIR
+                                                   [--seen_triplets_manifest SEEN_TRIPLETS_MANIFEST]
+                                                   [--steps {standard,feature,pair,graph,grounding} [{standard,feature,pair,graph,grounding} ...]]
+                                                   [--train_samples TRAIN_SAMPLES]
+                                                   [--eval_samples EVAL_SAMPLES]
+                                                   [--minimum_model_families MINIMUM_MODEL_FAMILIES]
+                                                   [--minimum_models_per_dataset MINIMUM_MODELS_PER_DATASET]
+                                                   [--allow_unlisted_family]
+                                                   [--allow_incomplete_audits]
+                                                   [--recall_ks RECALL_KS [RECALL_KS ...]]
+                                                   [--sgg_tasks {predcls,sgcls,sgdet} [{predcls,sgcls,sgdet} ...]]
+                                                   [--sgg_iou SGG_IOU]
+                                                   [--primary_k PRIMARY_K]
+                                                   [--minimum_relations MINIMUM_RELATIONS]
+                                                   [--minimum_clean_recall MINIMUM_CLEAN_RECALL]
+                                                   [--minimum_pvr_checked MINIMUM_PVR_CHECKED]
+                                                   [--perturbation_levels PERTURBATION_LEVELS [PERTURBATION_LEVELS ...]]
+                                                   [--perturbation_seeds PERTURBATION_SEEDS [PERTURBATION_SEEDS ...]]
+                                                   [--top_k_motifs TOP_K_MOTIFS]
+                                                   [--minimum_motif_train_support MINIMUM_MOTIF_TRAIN_SUPPORT]
+                                                   [--minimum_motif_eval_support MINIMUM_MOTIF_EVAL_SUPPORT]
+                                                   [--seed SEED]
+                                                   [--device DEVICE]
+
+Experiment IV: standard SGG benchmark of verified official checkpoints. This
+is the main paper experiment. It accepts only official adapter manifests,
+never local architecture imitations or randomly initialized substitutes. All
+outputs are machine-readable JSON; plotting belongs in the paper repository,
+not in the experimental evidence package. Expensive pair and motif
+interventions belong to Experiments II and III and are intentionally not part
+of the default Experiment-IV steps.
+
+options:
+  -h, --help            show this help message and exit
+  --datasets {vg,oi,gqa,psg,vrd} [{vg,oi,gqa,psg,vrd} ...]
+  --vg_root VG_ROOT
+  --oi_root OI_ROOT
+  --gqa_train_ann GQA_TRAIN_ANN
+  --gqa_eval_ann GQA_EVAL_ANN
+  --gqa_image_root GQA_IMAGE_ROOT
+  --psg_train_ann PSG_TRAIN_ANN
+  --psg_eval_ann PSG_EVAL_ANN
+  --psg_image_root PSG_IMAGE_ROOT
+  --psg_panoptic_root PSG_PANOPTIC_ROOT
+  --vrd_root VRD_ROOT
+  --official_manifest OFFICIAL_MANIFEST
+  --manifest_dir MANIFEST_DIR
+  --model_panel MODEL_PANEL
+  --output_dir OUTPUT_DIR
+  --seen_triplets_manifest SEEN_TRIPLETS_MANIFEST
+                        Full-training-split triplets produced by
+                        sgg_core.tools.build_seen_triplets.
+  --steps {standard,feature,pair,graph,grounding} [{standard,feature,pair,graph,grounding} ...]
+  --train_samples TRAIN_SAMPLES
+  --eval_samples EVAL_SAMPLES
+  --minimum_model_families MINIMUM_MODEL_FAMILIES
+  --minimum_models_per_dataset MINIMUM_MODELS_PER_DATASET
+  --allow_unlisted_family
+  --allow_incomplete_audits
+  --recall_ks RECALL_KS [RECALL_KS ...]
+  --sgg_tasks {predcls,sgcls,sgdet} [{predcls,sgcls,sgdet} ...]
+  --sgg_iou SGG_IOU
+  --primary_k PRIMARY_K
+  --minimum_relations MINIMUM_RELATIONS
+  --minimum_clean_recall MINIMUM_CLEAN_RECALL
+  --minimum_pvr_checked MINIMUM_PVR_CHECKED
+  --perturbation_levels PERTURBATION_LEVELS [PERTURBATION_LEVELS ...]
+  --perturbation_seeds PERTURBATION_SEEDS [PERTURBATION_SEEDS ...]
+  --top_k_motifs TOP_K_MOTIFS
+  --minimum_motif_train_support MINIMUM_MOTIF_TRAIN_SUPPORT
+  --minimum_motif_eval_support MINIMUM_MOTIF_EVAL_SUPPORT
+  --seed SEED
+  --device DEVICE

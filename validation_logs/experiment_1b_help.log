@@ -1,0 +1,52 @@
+usage: python -m sgg_core.experiments.experiment_1b [-h] --vg_root VG_ROOT
+                                                    --output_dir OUTPUT_DIR
+                                                    [--feature_mode {raw_backbone,official_features,proxy_smoke}]
+                                                    [--backbone BACKBONE]
+                                                    [--reasoning {gcn,gat,transformer}]
+                                                    [--depths DEPTHS [DEPTHS ...]]
+                                                    [--seeds SEEDS [SEEDS ...]]
+                                                    [--train_samples TRAIN_SAMPLES]
+                                                    [--test_samples TEST_SAMPLES]
+                                                    [--epochs EPOCHS]
+                                                    [--hidden_dim HIDDEN_DIM]
+                                                    [--negative_ratio NEGATIVE_RATIO]
+                                                    [--gradient_accumulation_steps GRADIENT_ACCUMULATION_STEPS]
+                                                    [--roi_chunk_size ROI_CHUNK_SIZE]
+                                                    [--eval_pair_chunk_size EVAL_PAIR_CHUNK_SIZE]
+                                                    [--amp | --no-amp]
+                                                    [--minimum_pvr_checked MINIMUM_PVR_CHECKED]
+                                                    [--learning_rate LEARNING_RATE]
+                                                    [--weight_decay WEIGHT_DECAY]
+                                                    [--cache_dir CACHE_DIR]
+                                                    [--device DEVICE]
+
+Experiment I-B: VG-150 PredCls relation-depth component study. This replaces
+the former relation-token classifier. Every graph node is one ground-truth
+object and every supervised example is an ordered object pair. The experiment
+is intentionally PredCls-only and does not test object recognition. Experiment
+I-A is the paper's object-grounding study; complete PredCls/SGCls/SGDet
+evaluation belongs to Experiment IV.
+
+options:
+  -h, --help            show this help message and exit
+  --vg_root VG_ROOT
+  --output_dir OUTPUT_DIR
+  --feature_mode {raw_backbone,official_features,proxy_smoke}
+  --backbone BACKBONE
+  --reasoning {gcn,gat,transformer}
+  --depths DEPTHS [DEPTHS ...]
+  --seeds SEEDS [SEEDS ...]
+  --train_samples TRAIN_SAMPLES
+  --test_samples TEST_SAMPLES
+  --epochs EPOCHS
+  --hidden_dim HIDDEN_DIM
+  --negative_ratio NEGATIVE_RATIO
+  --gradient_accumulation_steps GRADIENT_ACCUMULATION_STEPS
+  --roi_chunk_size ROI_CHUNK_SIZE
+  --eval_pair_chunk_size EVAL_PAIR_CHUNK_SIZE
+  --amp, --no-amp       Use CUDA mixed precision; ignored on CPU.
+  --minimum_pvr_checked MINIMUM_PVR_CHECKED
+  --learning_rate LEARNING_RATE
+  --weight_decay WEIGHT_DECAY
+  --cache_dir CACHE_DIR
+  --device DEVICE

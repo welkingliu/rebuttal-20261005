@@ -1,0 +1,38 @@
+usage: python -m sgg_core.experiments.experiment_3 [-h]
+                                                   --dataset {vg,oi,gqa,psg,vrd}
+                                                   --data_root DATA_ROOT
+                                                   [--train_ann TRAIN_ANN]
+                                                   [--eval_ann EVAL_ANN]
+                                                   [--image_root IMAGE_ROOT]
+                                                   [--panoptic_root PANOPTIC_ROOT]
+                                                   [--official_manifest OFFICIAL_MANIFEST]
+                                                   --output_dir OUTPUT_DIR
+                                                   [--train_samples TRAIN_SAMPLES]
+                                                   [--eval_samples EVAL_SAMPLES]
+                                                   [--top_k_motifs TOP_K_MOTIFS]
+                                                   [--minimum_train_support MINIMUM_TRAIN_SUPPORT]
+                                                   [--minimum_eval_support MINIMUM_EVAL_SUPPORT]
+                                                   [--seed SEED]
+                                                   [--device DEVICE]
+
+Experiment III: real-checkpoint motif intervention audit. Motifs are selected
+from the training split only and evaluated on a disjoint test split. MAR
+excludes predictions that were already wrong before ablation.
+
+options:
+  -h, --help            show this help message and exit
+  --dataset {vg,oi,gqa,psg,vrd}
+  --data_root DATA_ROOT
+  --train_ann TRAIN_ANN
+  --eval_ann EVAL_ANN
+  --image_root IMAGE_ROOT
+  --panoptic_root PANOPTIC_ROOT
+  --official_manifest OFFICIAL_MANIFEST
+  --output_dir OUTPUT_DIR
+  --train_samples TRAIN_SAMPLES
+  --eval_samples EVAL_SAMPLES
+  --top_k_motifs TOP_K_MOTIFS
+  --minimum_train_support MINIMUM_TRAIN_SUPPORT
+  --minimum_eval_support MINIMUM_EVAL_SUPPORT
+  --seed SEED
+  --device DEVICE

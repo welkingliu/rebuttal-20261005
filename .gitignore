@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+*.aux
+*.log
+!validation_logs/*.log
+*.out
+*.synctex.gz
+/data/
+/checkpoints/
+/external/

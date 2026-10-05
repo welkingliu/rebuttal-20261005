@@ -1,0 +1,193 @@
+{
+  "status": "complete",
+  "source_hashes": [
+    {
+      "path": "sgg_core/models/adapters/pysgg_live.py",
+      "expected": "53f52496534a40e21aead747a23c1ae56fb40592145bb7cf76ca8a28c54e5404",
+      "actual": "53f52496534a40e21aead747a23c1ae56fb40592145bb7cf76ca8a28c54e5404",
+      "match": true
+    },
+    {
+      "path": "sgg_core/mitigation/grounding_regularizer.py",
+      "expected": "a5a4b258209d973b1be50e4f5bf9468c587b7fd475db09fc292173dc731f9c96",
+      "actual": "a5a4b258209d973b1be50e4f5bf9468c587b7fd475db09fc292173dc731f9c96",
+      "match": true
+    },
+    {
+      "path": "sgg_core/mitigation/run_mitigation.py",
+      "expected": "6868922031e280cf8cc4d5a8c0c616d55cc1eac999bee5d6dab08f666944a8d5",
+      "actual": "6868922031e280cf8cc4d5a8c0c616d55cc1eac999bee5d6dab08f666944a8d5",
+      "match": true
+    },
+    {
+      "path": "scripts/run_paper_experiment5_tde_motifs.py",
+      "expected": "ab2260df9042bc89af38cb0556fbf83bfa176b7e69501d6b3bc3fcdc2f416738",
+      "actual": "ab2260df9042bc89af38cb0556fbf83bfa176b7e69501d6b3bc3fcdc2f416738",
+      "match": true
+    }
+  ],
+  "static_import_closure": {
+    "experiment_1a": {
+      "modules": [
+        "sgg_core.audits.feature_audit",
+        "sgg_core.audits.object_grounding",
+        "sgg_core.audits.physical_consistency",
+        "sgg_core.backbones.perception",
+        "sgg_core.backbones.reasoning",
+        "sgg_core.data.data_utils",
+        "sgg_core.data.gqa_psg_data_utils",
+        "sgg_core.experiments.experiment_1",
+        "sgg_core.experiments.experiment_1a"
+      ],
+      "imports_v_optimizer": false
+    },
+    "experiment_1b": {
+      "modules": [
+        "sgg_core.audits.feature_audit",
+        "sgg_core.audits.physical_consistency",
+        "sgg_core.backbones.perception",
+        "sgg_core.backbones.reasoning",
+        "sgg_core.data.data_utils",
+        "sgg_core.experiments.experiment_1",
+        "sgg_core.experiments.experiment_1b"
+      ],
+      "imports_v_optimizer": false
+    },
+    "experiment_2": {
+      "modules": [
+        "sgg_core.audits.error_decomposition",
+        "sgg_core.audits.object_propagation",
+        "sgg_core.audits.pair_audit",
+        "sgg_core.audits.perturbation_sweep",
+        "sgg_core.audits.physical_consistency",
+        "sgg_core.audits.standard_sgg_eval",
+        "sgg_core.data.data_utils",
+        "sgg_core.data.gqa_psg_data_utils",
+        "sgg_core.data.oi_data_utils",
+        "sgg_core.data.vrd_data_utils",
+        "sgg_core.experiments.experiment_2",
+        "sgg_core.models.official_adapter",
+        "sgg_core.protocol"
+      ],
+      "imports_v_optimizer": false
+    },
+    "experiment_3": {
+      "modules": [
+        "sgg_core.audits.graph_audit",
+        "sgg_core.data.data_utils",
+        "sgg_core.data.gqa_psg_data_utils",
+        "sgg_core.data.oi_data_utils",
+        "sgg_core.data.vrd_data_utils",
+        "sgg_core.experiments.experiment_3",
+        "sgg_core.models.official_adapter",
+        "sgg_core.protocol"
+      ],
+      "imports_v_optimizer": false
+    },
+    "experiment_4": {
+      "modules": [
+        "sgg_core.audits.error_decomposition",
+        "sgg_core.audits.evidence_chain",
+        "sgg_core.audits.feature_audit",
+        "sgg_core.audits.graph_audit",
+        "sgg_core.audits.pair_audit",
+        "sgg_core.audits.perturbation_sweep",
+        "sgg_core.audits.physical_consistency",
+        "sgg_core.audits.standard_sgg_eval",
+        "sgg_core.data.data_utils",
+        "sgg_core.data.gqa_psg_data_utils",
+        "sgg_core.data.oi_data_utils",
+        "sgg_core.data.vrd_data_utils",
+        "sgg_core.experiments.experiment_4",
+        "sgg_core.models.official_adapter",
+        "sgg_core.models.panel",
+        "sgg_core.protocol",
+        "sgg_core.submission_protocol"
+      ],
+      "imports_v_optimizer": false
+    },
+    "experiment_5": {
+      "modules": [
+        "sgg_core.audits.error_decomposition",
+        "sgg_core.audits.graph_audit",
+        "sgg_core.audits.live_sgcls_validation",
+        "sgg_core.audits.pair_audit",
+        "sgg_core.audits.standard_sgg_eval",
+        "sgg_core.data.data_utils",
+        "sgg_core.experiments.experiment_5",
+        "sgg_core.mitigation.grounding_regularizer",
+        "sgg_core.mitigation.run_mitigation",
+        "sgg_core.models.official_adapter"
+      ],
+      "imports_v_optimizer": true
+    }
+  },
+  "checks": [
+    {
+      "name": "release_tests",
+      "returncode": 0,
+      "log": "release_tests.log",
+      "sha256": "44d86eb98ebaf629b4eab586f623ac890a0ca2ad5f2751e8d237e28affacea3e"
+    },
+    {
+      "name": "readout_scope_tests",
+      "returncode": 0,
+      "log": "readout_scope_tests.log",
+      "sha256": "33de33d9737b3a19a92b626182bd4b82da1e6be2bc255ccb55ddea7a3a149df3"
+    },
+    {
+      "name": "experiment_1a_help",
+      "returncode": 0,
+      "log": "experiment_1a_help.log",
+      "sha256": "97a6db233d866be64ae7f39cb74a7f165ffdf03545265d13c5ca70516f94f3ca"
+    },
+    {
+      "name": "experiment_1b_help",
+      "returncode": 0,
+      "log": "experiment_1b_help.log",
+      "sha256": "f9da928bc5eab70e28c2d3481a3659376eb3be5150a5c377ecf5f124a9900f1b"
+    },
+    {
+      "name": "experiment_2_help",
+      "returncode": 0,
+      "log": "experiment_2_help.log",
+      "sha256": "7653498a88d6ab8ea0b0e0ed952e5e75fd9729e420a5ed92abab6af3105bfe32"
+    },
+    {
+      "name": "experiment_3_help",
+      "returncode": 0,
+      "log": "experiment_3_help.log",
+      "sha256": "1d5eca06fe89dc0b148f0e95a45658d0ca22cdb283798795ff1e7c90c9b01d90"
+    },
+    {
+      "name": "experiment_4_help",
+      "returncode": 0,
+      "log": "experiment_4_help.log",
+      "sha256": "497955f17c7a96f165e9f367335d0e815eab461aad2e99af4d7f79a2f3a3fef3"
+    },
+    {
+      "name": "experiment_5_help",
+      "returncode": 0,
+      "log": "experiment_5_help.log",
+      "sha256": "9c8013860c9ae5ecaddf6953c6faec5e7138f18069592def2c3aa3e2c0a040a8"
+    }
+  ],
+  "all_checks_passed": true,
+  "impact": {
+    "V_training": "Effective object-readout objective must be corrected; native visual/context/relation modules were not trained.",
+    "V_test_and_external": "Use the updated readout; numerical outputs retained as readout calibration, not grounding-aware training.",
+    "I_A_I_B": "No V optimizer in static import closure; separate feature/probe and relation-depth fitting. This is not an independent rerun of every historical asset.",
+    "II_III_IV": "No V optimizer in entry-point static closure. Shared dynamic adapter exists. Synthetic identity initialization and zero cross-gradient tests pass; historical manifest/checkpoint auditing remains run-specific.",
+    "III": "Historical paired raw records unavailable; withdraw historical paired CI and matched-control claims from the current evidence set.",
+    "release": "Earlier R21 failure remains archived; current source tests and six help commands do not establish a fresh full-data reproduction."
+  },
+  "gradient_evidence": {
+    "records": 384,
+    "max_gradient_error": 0.0
+  },
+  "limitations": [
+    "Static import traversal does not resolve dynamic imports.",
+    "Synthetic adapter tests are not native CUDA inference.",
+    "No universal claim that all prior numerical results are unaffected."
+  ]
+}

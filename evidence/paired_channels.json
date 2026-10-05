@@ -1,0 +1,34 @@
+{
+  "plain_motifs_sgcls": {
+    "contrast": "oracle_frequency minus oracle_semantic; same eligible pairs",
+    "scope": "post-hoc descriptive comparison; not a deployable oracle or cross-model ranking",
+    "statistic": {
+      "value": 0.055019852524106634,
+      "bootstrap_95ci": [
+        0.0478410031430243,
+        0.06255362498007254
+      ],
+      "denominator": 14104,
+      "images": 2000,
+      "bootstrap_unit": "image",
+      "bootstrap_trials": 10000
+    },
+    "image_count": 2000
+  },
+  "transformer_sgdet": {
+    "contrast": "oracle_frequency minus oracle_semantic; same eligible pairs",
+    "scope": "post-hoc descriptive comparison; not a deployable oracle or cross-model ranking",
+    "statistic": {
+      "value": 0.09250487601003064,
+      "bootstrap_95ci": [
+        0.08065245580057685,
+        0.10452607913051244
+      ],
+      "denominator": 10767,
+      "images": 1896,
+      "bootstrap_unit": "image",
+      "bootstrap_trials": 10000
+    },
+    "image_count": 2000
+  }
+}

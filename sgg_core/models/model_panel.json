@@ -1,0 +1,190 @@
+{
+  "panel_version": "2026-07-15",
+  "formal_target_families": 5,
+  "recommended_target_families": 7,
+  "survey_literature_target_families": 10,
+  "candidate_families": 20,
+  "counting_rule": "The literature taxonomy covers at least 10 families. The executable benchmark separates a native SGDet breadth panel of at least 5 verified families from a matched VG PredCls/SGCls/SGDet depth panel containing Neural Motifs and SGG Transformer. The same two families support live diagnostics and mitigation. A family counts experimentally only after source/checkpoint provenance, exact ontology, reference reproduction, and successful task output are present.",
+  "survey_only_recent_works": [
+    {
+      "family": "CAPSGG",
+      "venue": "CVPR 2025",
+      "paper": "https://openaccess.thecvf.com/content/CVPR2025/html/Huang_Navigating_the_Unseen_Zero-shot_Scene_Graph_Generation_via_Capsule-Based_Equivariant_CVPR_2025_paper.html",
+      "experimental_status": "not_counted_no_public_implementation"
+    },
+    {
+      "family": "Universal SGG",
+      "venue": "CVPR 2025",
+      "paper": "https://openaccess.thecvf.com/content/CVPR2025/html/Wu_Universal_Scene_Graph_Generation_CVPR_2025_paper.html",
+      "experimental_status": "not_counted_cross_modal_task_protocol"
+    },
+    {
+      "family": "DSGG",
+      "venue": "recent_diffusion_sgg",
+      "official_repository": "https://github.com/zeeshanhayder/DSGG",
+      "experimental_status": "not_counted_repository_has_no_reproducible_release"
+    }
+  ],
+  "models": [
+    {
+      "family": "IMP",
+      "paradigm": "message_passing",
+      "role": "classic",
+      "official_repository": "https://github.com/microsoft/scene_graph_benchmark",
+      "native_datasets": ["vg", "oi", "psg"],
+      "checkpoint_availability": "published"
+    },
+    {
+      "family": "Neural Motifs",
+      "paradigm": "sequential_context",
+      "role": "classic",
+      "official_repository": "https://github.com/microsoft/scene_graph_benchmark",
+      "native_datasets": ["vg", "oi", "psg"],
+      "checkpoint_availability": "published"
+    },
+    {
+      "family": "SGG Transformer",
+      "paradigm": "transformer_context",
+      "role": "matched_transformer_depth_baseline",
+      "official_repository": "https://github.com/SHTUPLUS/PySGG",
+      "native_datasets": ["vg"],
+      "checkpoint_availability": "trained_from_official_code"
+    },
+    {
+      "family": "VCTree",
+      "paradigm": "tree_context",
+      "role": "classic",
+      "official_repository": "https://github.com/KaihuaTang/Scene-Graph-Benchmark.pytorch",
+      "native_datasets": ["vg", "psg"],
+      "checkpoint_availability": "published_or_train_from_official_code"
+    },
+    {
+      "family": "TDE-Motifs",
+      "paradigm": "causal_debiasing",
+      "role": "debiasing",
+      "official_repository": "https://github.com/KaihuaTang/Scene-Graph-Benchmark.pytorch",
+      "native_datasets": ["vg"],
+      "checkpoint_availability": "train_from_official_code"
+    },
+    {
+      "family": "GPS-Net",
+      "paradigm": "graph_property_sensing",
+      "role": "graph_network",
+      "official_repository": "https://github.com/siml3/GPS-Net",
+      "native_datasets": ["vg", "oi", "vrd", "psg"],
+      "checkpoint_availability": "published_or_openpsg_port"
+    },
+    {
+      "family": "GRCNN",
+      "paradigm": "graph_convolution",
+      "role": "graph_network",
+      "official_repository": "https://github.com/microsoft/scene_graph_benchmark",
+      "native_datasets": ["vg", "oi"],
+      "checkpoint_availability": "published"
+    },
+    {
+      "family": "RelDN",
+      "paradigm": "relation_detection",
+      "role": "strong_two_stage",
+      "official_repository": "https://github.com/microsoft/scene_graph_benchmark",
+      "native_datasets": ["vg", "oi", "vrd"],
+      "checkpoint_availability": "published"
+    },
+    {
+      "family": "BGNN",
+      "paradigm": "bipartite_graph",
+      "role": "unbiased_sgg",
+      "official_repository": "https://github.com/SHTUPLUS/PySGG",
+      "native_datasets": ["vg", "oi"],
+      "checkpoint_availability": "published"
+    },
+    {
+      "family": "RelTR",
+      "paradigm": "end_to_end_transformer",
+      "role": "transformer",
+      "official_repository": "https://github.com/yrcong/RelTR",
+      "native_datasets": ["vg", "oi"],
+      "checkpoint_availability": "published"
+    },
+    {
+      "family": "SGTR",
+      "paradigm": "end_to_end_transformer",
+      "role": "transformer",
+      "official_repository": "https://github.com/Scarecrow0/SGTR",
+      "native_datasets": ["vg", "oi"],
+      "checkpoint_availability": "published"
+    },
+    {
+      "family": "PE-Net",
+      "paradigm": "prototype_embedding",
+      "role": "recent_closed_set",
+      "official_repository": "https://github.com/VL-Group/PENET",
+      "native_datasets": ["vg"],
+      "checkpoint_availability": "official_code_verify_weights"
+    },
+    {
+      "family": "PSGTR",
+      "paradigm": "panoptic_transformer",
+      "role": "panoptic",
+      "official_repository": "https://github.com/Jingkang50/OpenPSG",
+      "native_datasets": ["psg"],
+      "checkpoint_availability": "published_with_sha256"
+    },
+    {
+      "family": "PSGFormer",
+      "paradigm": "panoptic_transformer",
+      "role": "panoptic",
+      "official_repository": "https://github.com/Jingkang50/OpenPSG",
+      "native_datasets": ["psg"],
+      "checkpoint_availability": "published_with_sha256"
+    },
+    {
+      "family": "OvSGTR",
+      "paradigm": "open_vocabulary_foundation",
+      "role": "foundation_open_vocabulary",
+      "official_repository": "https://github.com/gpt4vision/OvSGTR",
+      "native_datasets": ["vg"],
+      "checkpoint_availability": "published_on_huggingface"
+    },
+    {
+      "family": "EGTR",
+      "paradigm": "detr_attention_graph",
+      "role": "recent_closed_set",
+      "official_repository": "https://github.com/naver-ai/egtr",
+      "native_datasets": ["vg", "oi"],
+      "checkpoint_availability": "published"
+    },
+    {
+      "family": "PGSG",
+      "paradigm": "vlm_image_to_graph_sequence",
+      "role": "foundation_open_vocabulary",
+      "official_repository": "https://github.com/SHTUPLUS/Pix2Grp_CVPR2024",
+      "native_datasets": ["vg", "psg"],
+      "checkpoint_availability": "published_on_huggingface"
+    },
+    {
+      "family": "HiKER-SGG",
+      "paradigm": "hierarchical_knowledge_robustness",
+      "role": "robustness_control",
+      "official_repository": "https://github.com/zhangce01/HiKER-SGG",
+      "native_datasets": ["vg"],
+      "checkpoint_availability": "train_from_official_code"
+    },
+    {
+      "family": "LLM4SGG",
+      "paradigm": "llm_weak_supervision",
+      "role": "weak_supervision_control",
+      "official_repository": "https://github.com/rlqja1107/torch-LLM4SGG",
+      "native_datasets": ["vg"],
+      "checkpoint_availability": "official_code_verify_weights"
+    },
+    {
+      "family": "APT",
+      "paradigm": "adaptive_prompt_tuning",
+      "role": "frontier_universal_plugin",
+      "official_repository": "https://github.com/CGCL-codes/APT",
+      "native_datasets": ["vg"],
+      "checkpoint_availability": "new_code_release_retrain_required"
+    }
+  ]
+}
