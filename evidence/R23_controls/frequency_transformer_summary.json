@@ -1,0 +1,90 @@
+{
+  "status": "complete",
+  "images": 2000,
+  "evaluable_images": 1896,
+  "relations": 10767,
+  "protocol_sha256": "e9309643974433c6ef53541e20f14cd92f0ea603256cf5d3c8f6b30c039797c9",
+  "contrasts": {
+    "oracle_minus_random_s17": {
+      "value": 0.6891427509984211,
+      "baseline": 0.4540726293303613,
+      "delta": 0.23507012166805982,
+      "paired_image_95ci": [
+        0.21952103153716637,
+        0.2508582866603636
+      ],
+      "images": 1896,
+      "denominator": 10767.0,
+      "bootstrap_draws": 10000,
+      "interpretation": "descriptive paired interval; no multiplicity-adjusted discovery claim"
+    },
+    "random_s17_minus_clean": {
+      "value": 0.4540726293303613,
+      "baseline": 0.6011888176836631,
+      "delta": -0.14711618835330176,
+      "paired_image_95ci": [
+        -0.16232256464169034,
+        -0.1320789955744997
+      ],
+      "images": 1896,
+      "denominator": 10767.0,
+      "bootstrap_draws": 10000,
+      "interpretation": "descriptive paired interval; no multiplicity-adjusted discovery claim"
+    },
+    "oracle_minus_random_s23": {
+      "value": 0.6891427509984211,
+      "baseline": 0.45908795393331475,
+      "delta": 0.23005479706510634,
+      "paired_image_95ci": [
+        0.21445747344719948,
+        0.24543860206141097
+      ],
+      "images": 1896,
+      "denominator": 10767.0,
+      "bootstrap_draws": 10000,
+      "interpretation": "descriptive paired interval; no multiplicity-adjusted discovery claim"
+    },
+    "random_s23_minus_clean": {
+      "value": 0.45908795393331475,
+      "baseline": 0.6011888176836631,
+      "delta": -0.14210086375034828,
+      "paired_image_95ci": [
+        -0.1569941919064265,
+        -0.12720601191772093
+      ],
+      "images": 1896,
+      "denominator": 10767.0,
+      "bootstrap_draws": 10000,
+      "interpretation": "descriptive paired interval; no multiplicity-adjusted discovery claim"
+    },
+    "oracle_minus_random_s31": {
+      "value": 0.6891427509984211,
+      "baseline": 0.454444134856506,
+      "delta": 0.23469861614191512,
+      "paired_image_95ci": [
+        0.21911368866969602,
+        0.25006923524877717
+      ],
+      "images": 1896,
+      "denominator": 10767.0,
+      "bootstrap_draws": 10000,
+      "interpretation": "descriptive paired interval; no multiplicity-adjusted discovery claim"
+    },
+    "random_s31_minus_clean": {
+      "value": 0.454444134856506,
+      "baseline": 0.6011888176836631,
+      "delta": -0.14674468282715705,
+      "paired_image_95ci": [
+        -0.16209677708668496,
+        -0.13141611527616043
+      ],
+      "images": 1896,
+      "denominator": 10767.0,
+      "bootstrap_draws": 10000,
+      "interpretation": "descriptive paired interval; no multiplicity-adjusted discovery claim"
+    }
+  },
+  "invariance_passed": true,
+  "independent_confirmation": false,
+  "seconds": 2889.1927872002125
+}

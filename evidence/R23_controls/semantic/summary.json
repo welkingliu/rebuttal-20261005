@@ -1,0 +1,252 @@
+{
+  "motifs": {
+    "status": "complete",
+    "contrasts": {
+      "(17, 25)": {
+        "value": 0.6378332387975043,
+        "baseline": 0.6381877481565513,
+        "delta": -0.00035450935904707883,
+        "paired_image_95ci": [
+          -0.0012285056680113055,
+          0.0004951554346565517
+        ],
+        "images": 2000,
+        "denominator": 14104.0,
+        "bootstrap_draws": 10000,
+        "interpretation": "descriptive paired interval; no multiplicity-adjusted discovery claim"
+      },
+      "(17, 50)": {
+        "value": 0.6376914350538854,
+        "baseline": 0.6380459444129325,
+        "delta": -0.00035450935904707883,
+        "paired_image_95ci": [
+          -0.0016876598713047991,
+          0.0010084330222873287
+        ],
+        "images": 2000,
+        "denominator": 14104.0,
+        "bootstrap_draws": 10000,
+        "interpretation": "descriptive paired interval; no multiplicity-adjusted discovery claim"
+      },
+      "(17, 100)": {
+        "value": 0.6369115144639819,
+        "baseline": 0.6362733976176971,
+        "delta": 0.0006381168462847419,
+        "paired_image_95ci": [
+          -0.0013091464092446134,
+          0.002615853245649027
+        ],
+        "images": 2000,
+        "denominator": 14104.0,
+        "bootstrap_draws": 10000,
+        "interpretation": "descriptive paired interval; no multiplicity-adjusted discovery claim"
+      },
+      "(23, 25)": {
+        "value": 0.6375496313102665,
+        "baseline": 0.6381877481565513,
+        "delta": -0.0006381168462847419,
+        "paired_image_95ci": [
+          -0.0016680264922540415,
+          0.00034802825403562403
+        ],
+        "images": 2000,
+        "denominator": 14104.0,
+        "bootstrap_draws": 10000,
+        "interpretation": "descriptive paired interval; no multiplicity-adjusted discovery claim"
+      },
+      "(23, 50)": {
+        "value": 0.63712422007941,
+        "baseline": 0.6379750425411231,
+        "delta": -0.0008508224617129892,
+        "paired_image_95ci": [
+          -0.0021033627575012172,
+          0.00042251215576463117
+        ],
+        "images": 2000,
+        "denominator": 14104.0,
+        "bootstrap_draws": 10000,
+        "interpretation": "descriptive paired interval; no multiplicity-adjusted discovery claim"
+      },
+      "(23, 100)": {
+        "value": 0.6369115144639819,
+        "baseline": 0.63712422007941,
+        "delta": -0.0002127056154282473,
+        "paired_image_95ci": [
+          -0.0025974682546977793,
+          0.0023642062451682275
+        ],
+        "images": 2000,
+        "denominator": 14104.0,
+        "bootstrap_draws": 10000,
+        "interpretation": "descriptive paired interval; no multiplicity-adjusted discovery claim"
+      },
+      "(31, 25)": {
+        "value": 0.6374787294384572,
+        "baseline": 0.6381877481565513,
+        "delta": -0.0007090187180941577,
+        "paired_image_95ci": [
+          -0.0017248648068458779,
+          0.00035373500050443714
+        ],
+        "images": 2000,
+        "denominator": 14104.0,
+        "bootstrap_draws": 10000,
+        "interpretation": "descriptive paired interval; no multiplicity-adjusted discovery claim"
+      },
+      "(31, 50)": {
+        "value": 0.6370533182076007,
+        "baseline": 0.6378332387975043,
+        "delta": -0.0007799205899035735,
+        "paired_image_95ci": [
+          -0.002314664630390036,
+          0.000717004094006329
+        ],
+        "images": 2000,
+        "denominator": 14104.0,
+        "bootstrap_draws": 10000,
+        "interpretation": "descriptive paired interval; no multiplicity-adjusted discovery claim"
+      },
+      "(31, 100)": {
+        "value": 0.6369115144639819,
+        "baseline": 0.6363442994895065,
+        "delta": 0.0005672149744753262,
+        "paired_image_95ci": [
+          -0.001853617725254429,
+          0.003257316725968855
+        ],
+        "images": 2000,
+        "denominator": 14104.0,
+        "bootstrap_draws": 10000,
+        "interpretation": "descriptive paired interval; no multiplicity-adjusted discovery claim"
+      }
+    },
+    "parent_protocol_sha256": "862c7d05c5ed34d723f22476eaf0a87f6161a82031ed9f741d2f8dc763ddb1bc",
+    "source_sha256": "81bcbc9493f07511f0b664473acd2995e0ce2233f9786a728b36da5c33c86538",
+    "scope": "Post-hoc; no training-seed replication or multiplicity correction"
+  },
+  "transformer": {
+    "status": "complete",
+    "contrasts": {
+      "(17, 25)": {
+        "value": 0.6011888176836631,
+        "baseline": 0.6007244357759821,
+        "delta": 0.00046438190768087673,
+        "paired_image_95ci": [
+          -0.0009305788200260562,
+          0.0019403052106687698
+        ],
+        "images": 1896,
+        "denominator": 10767.0,
+        "bootstrap_draws": 10000,
+        "interpretation": "descriptive paired interval; no multiplicity-adjusted discovery claim"
+      },
+      "(17, 50)": {
+        "value": 0.6004458066313736,
+        "baseline": 0.6012816940651993,
+        "delta": -0.0008358874338255781,
+        "paired_image_95ci": [
+          -0.002650342472176623,
+          0.0010023167771250007
+        ],
+        "images": 1896,
+        "denominator": 10767.0,
+        "bootstrap_draws": 10000,
+        "interpretation": "descriptive paired interval; no multiplicity-adjusted discovery claim"
+      },
+      "(17, 100)": {
+        "value": 0.5995170428160119,
+        "baseline": 0.6034178508405312,
+        "delta": -0.003900808024519365,
+        "paired_image_95ci": [
+          -0.006293546852967041,
+          -0.0015755183044574073
+        ],
+        "images": 1896,
+        "denominator": 10767.0,
+        "bootstrap_draws": 10000,
+        "interpretation": "descriptive paired interval; no multiplicity-adjusted discovery claim"
+      },
+      "(23, 25)": {
+        "value": 0.6017460759728801,
+        "baseline": 0.6022104578805609,
+        "delta": -0.00046438190768087673,
+        "paired_image_95ci": [
+          -0.0024202087557887234,
+          0.001605450981404602
+        ],
+        "images": 1896,
+        "denominator": 10767.0,
+        "bootstrap_draws": 10000,
+        "interpretation": "descriptive paired interval; no multiplicity-adjusted discovery claim"
+      },
+      "(23, 50)": {
+        "value": 0.6007244357759821,
+        "baseline": 0.6031392216959227,
+        "delta": -0.002414785919940559,
+        "paired_image_95ci": [
+          -0.00469012205912791,
+          0.0
+        ],
+        "images": 1896,
+        "denominator": 10767.0,
+        "bootstrap_draws": 10000,
+        "interpretation": "descriptive paired interval; no multiplicity-adjusted discovery claim"
+      },
+      "(23, 100)": {
+        "value": 0.5995170428160119,
+        "baseline": 0.6019318287359524,
+        "delta": -0.002414785919940559,
+        "paired_image_95ci": [
+          -0.0054986404949196235,
+          0.0009244130880636746
+        ],
+        "images": 1896,
+        "denominator": 10767.0,
+        "bootstrap_draws": 10000,
+        "interpretation": "descriptive paired interval; no multiplicity-adjusted discovery claim"
+      },
+      "(31, 25)": {
+        "value": 0.6007244357759821,
+        "baseline": 0.600074301105229,
+        "delta": 0.0006501346707532275,
+        "paired_image_95ci": [
+          -0.0011834400347421655,
+          0.002730377466891121
+        ],
+        "images": 1896,
+        "denominator": 10767.0,
+        "bootstrap_draws": 10000,
+        "interpretation": "descriptive paired interval; no multiplicity-adjusted discovery claim"
+      },
+      "(31, 50)": {
+        "value": 0.6011888176836631,
+        "baseline": 0.6017460759728801,
+        "delta": -0.0005572582892170521,
+        "paired_image_95ci": [
+          -0.0029301257952511115,
+          0.001955361319149549
+        ],
+        "images": 1896,
+        "denominator": 10767.0,
+        "bootstrap_draws": 10000,
+        "interpretation": "descriptive paired interval; no multiplicity-adjusted discovery claim"
+      },
+      "(31, 100)": {
+        "value": 0.5995170428160119,
+        "baseline": 0.6025819634067057,
+        "delta": -0.0030649205906937865,
+        "paired_image_95ci": [
+          -0.005981881443187732,
+          -9.135078683902877e-05
+        ],
+        "images": 1896,
+        "denominator": 10767.0,
+        "bootstrap_draws": 10000,
+        "interpretation": "descriptive paired interval; no multiplicity-adjusted discovery claim"
+      }
+    },
+    "parent_protocol_sha256": "22981bddb09e5b82f9d029ddacdc31f24cbbbc3a4d7b3910748b3dff49196b9d",
+    "source_sha256": "81bcbc9493f07511f0b664473acd2995e0ce2233f9786a728b36da5c33c86538",
+    "scope": "Post-hoc; no training-seed replication or multiplicity correction"
+  }
+}

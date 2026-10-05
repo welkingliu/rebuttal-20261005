@@ -1,0 +1,92 @@
+[
+  {
+    "path": "revision_code/frequency_matched_controls_v2.py",
+    "original_sha256": "4022e9abff07bfd78f738f6cd76d30873bf23cfee600261ff64893bbcfe47fdf",
+    "public_sha256": "4022e9abff07bfd78f738f6cd76d30873bf23cfee600261ff64893bbcfe47fdf"
+  },
+  {
+    "path": "revision_code/semantic_control_pairs.py",
+    "original_sha256": "81bcbc9493f07511f0b664473acd2995e0ce2233f9786a728b36da5c33c86538",
+    "public_sha256": "81bcbc9493f07511f0b664473acd2995e0ce2233f9786a728b36da5c33c86538"
+  },
+  {
+    "path": "revision_code/test_frequency_matched_controls_v2.py",
+    "original_sha256": "32de1857324dabf7fd26bde97e98cb0f3934a84cc6ffea1e84033fe0f518d49d",
+    "public_sha256": "32de1857324dabf7fd26bde97e98cb0f3934a84cc6ffea1e84033fe0f518d49d"
+  },
+  {
+    "path": "revision_code/show_frequency_progress.py",
+    "original_sha256": "e332027716af18c04b3abe2c37fcccee8208339d90901fe5edaaff3d4e011cf6",
+    "public_sha256": "e332027716af18c04b3abe2c37fcccee8208339d90901fe5edaaff3d4e011cf6"
+  },
+  {
+    "path": "revision_code/run_frequency_lane_v2.sh",
+    "original_sha256": "f15212be06f1bc0000c4ee69bc7b7dc431751c3e861da313e2be35fdd46938eb",
+    "public_sha256": "8da7c98e274739f92c40d13ae6113e1189ce450ccdae026982d82018cef5c464"
+  },
+  {
+    "path": "revision_code/storage_runtime.sh",
+    "original_sha256": "8f478c4d16901c15d9cdecdccbdb2a1e4f72b186b03e60d4f535ac5a0e253f26",
+    "public_sha256": "55fefdfab6d496db33e13025561b8ef11baa8cd5f9f1e4f34e832cfc2284aaeb"
+  },
+  {
+    "path": "revision_code/common.py",
+    "original_sha256": "b39050f76803b0629a92ae66226a02895fd576925d7ff031524b5c2786ac7cb4",
+    "public_sha256": "4e6cb987afeb2f95a3a243822c48b7d4fc28bde03062cfaa0314b3fbcdd6ccd6"
+  },
+  {
+    "path": "revision_code/evidence_completion.py",
+    "original_sha256": "0596adfb507e99484f2be9d6610cb23b0c6884c29477481c125a255fa3077a52",
+    "public_sha256": "0596adfb507e99484f2be9d6610cb23b0c6884c29477481c125a255fa3077a52"
+  },
+  {
+    "path": "revision_code/identity_intervention.py",
+    "original_sha256": "c92257008227524b5e8ddcef07072df0da5284e8d022fa4d02f40ee75d15ade6",
+    "public_sha256": "c92257008227524b5e8ddcef07072df0da5284e8d022fa4d02f40ee75d15ade6"
+  },
+  {
+    "path": "revision_code/r20_motifs_native_bridge.py",
+    "original_sha256": "a6fe5cf75dde812670634266c68b368b8a3c67b62c90bf95e740d33512215303",
+    "public_sha256": "a6fe5cf75dde812670634266c68b368b8a3c67b62c90bf95e740d33512215303"
+  },
+  {
+    "path": "revision_code/r20_motifs_bridge.py",
+    "original_sha256": "9ff763fd76c5761886cca77d608f3f97eeb2080356f4f5c6130d1081abb618f7",
+    "public_sha256": "9ff763fd76c5761886cca77d608f3f97eeb2080356f4f5c6130d1081abb618f7"
+  },
+  {
+    "path": "revision_code/r15_identity.py",
+    "original_sha256": "aa91fb26fb9db1974fdde833ae623e0dea3b7c489a930b884911e6f1f9f980bc",
+    "public_sha256": "aa91fb26fb9db1974fdde833ae623e0dea3b7c489a930b884911e6f1f9f980bc"
+  },
+  {
+    "path": "revision_code/sgdet_identity.py",
+    "original_sha256": "78ec9a6e2020f745a0d4ddfee6667074cd76fce475a0b27b324b3e07924f002c",
+    "public_sha256": "78ec9a6e2020f745a0d4ddfee6667074cd76fce475a0b27b324b3e07924f002c"
+  },
+  {
+    "path": "revision_code/reproduction_pair_audit.py",
+    "original_sha256": "08db948c05cff83843fa5107c024aeac04116eee72f4869566971ddc44b2ef69",
+    "public_sha256": "08db948c05cff83843fa5107c024aeac04116eee72f4869566971ddc44b2ef69"
+  },
+  {
+    "path": "evidence/R23_controls/frequency_motifs_summary.json",
+    "original_sha256": "4f8d119d312f4402a6066e9fa0df31659a4e3f66339300560761ac87654afd3b",
+    "public_sha256": "4f8d119d312f4402a6066e9fa0df31659a4e3f66339300560761ac87654afd3b"
+  },
+  {
+    "path": "evidence/R23_controls/frequency_motifs_protocol.json",
+    "original_sha256": "d5c4d4481d8705f0554f690f83b361a649af6784060876db84ed5818b31f7067",
+    "public_sha256": "d5c4d4481d8705f0554f690f83b361a649af6784060876db84ed5818b31f7067"
+  },
+  {
+    "path": "evidence/R23_controls/frequency_transformer_summary.json",
+    "original_sha256": "7e259bef6cfa23b1ea774e68644cb2f7809de03905b3806ede31af3845abbfd3",
+    "public_sha256": "7e259bef6cfa23b1ea774e68644cb2f7809de03905b3806ede31af3845abbfd3"
+  },
+  {
+    "path": "evidence/R23_controls/frequency_transformer_protocol.json",
+    "original_sha256": "e9309643974433c6ef53541e20f14cd92f0ea603256cf5d3c8f6b30c039797c9",
+    "public_sha256": "e9309643974433c6ef53541e20f14cd92f0ea603256cf5d3c8f6b30c039797c9"
+  }
+]

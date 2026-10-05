@@ -4,6 +4,23 @@ This repository contains the audited revision source and selected evidence.
 Submitted results, revised results, and exploratory repairs must not be merged
 into one leaderboard. This is a public repository, not an anonymous review URL.
 
+## Additional matched controls (October 5)
+
+Completed controls hold visual evidence and replacement sites fixed. GT labels
+in the frequency-prior channel improve predicate Top-1 by 5.45 pp for Motifs
+SGCls and 8.80 pp for Transformer SGDet. Matched incorrect labels instead reduce
+accuracy by 10.40-11.37 and 14.21-14.71 pp across three intervention seeds.
+These are diagnostic substitutions, not deployable repairs. Semantic controls
+remain model dependent; the joint SGCls/SGDet mitigation gate remains unmet.
+
+See [control summaries, protocols and source provenance](evidence/R23_controls/README.md).
+The separately prepared `matched_identity_controls_20261005.zip` contains
+4,000 per-image JSON/NPZ pairs and semantic paired counts. Its size and checksum
+are recorded in [ARCHIVE.json](evidence/R23_controls/ARCHIVE.json).
+It is intended for the read-only OneDrive folder linked below; cloud upload of
+this supplement is not yet verified. Keep the earlier paired-channel archive.
+Historical validation counts below do not certify this newly added code.
+
 ## What changed
 
 | Evidence | Result | Interpretation |
@@ -31,10 +48,11 @@ comparisons are post-hoc and are not multiplicity-corrected.
 - `MANIFEST.sha256`: checksums for this staged version, generated after verification.
 
 Full paired NPZ records are in `paired_channel_records_20261005.zip`, under the
-read-only [OneDrive folder kdd_sgg_upload_20261005](https://1drv.ms/f/c/bbaa76995e4a814f/IgDQLM6an3FGR4QcPttIInadAfUA6Bp_-s6IHhmloTWIS98?e=EeRqaO).
+read-only [OneDrive folder kdd_sgg_upload_20261005](https://1drv.ms/f/c/bbaa76995e4a814f/IgDQLM6an3FGR4QcPttIInadAfUA6Bp_-s6IHhmloTWIS98?e=qabT4l).
 On 2026-10-05, an unsigned-in browser could list the archive (2.34 GB),
-README.md, and SHA256SUMS. Full downloaded-copy checksum verification remains
-pending; listing visibility alone does not establish archive integrity.
+README.md, and SHA256SUMS. The earlier paired-channel archive was downloaded and SHA256-verified.
+The new control supplement below is separately packaged; its cloud upload has
+not yet been verified.
 Raw images and third-party weights are not included.
 
 ## Corrected scope of Experiment V
