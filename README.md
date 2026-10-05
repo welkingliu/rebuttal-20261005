@@ -31,9 +31,11 @@ comparisons are post-hoc and are not multiplicity-corrected.
 - `MANIFEST.sha256`: checksums for this staged version, generated after verification.
 
 Full paired NPZ records are in `paired_channel_records_20261005.zip`, under the
-OneDrive folder `kdd_sgg_upload_20261005`. The owner reports that upload is in
-progress; cloud completion and a downloaded-copy checksum are not yet verified.
-No share URL is claimed. Raw images and third-party weights are not included.
+read-only [OneDrive folder kdd_sgg_upload_20261005](https://1drv.ms/f/c/bbaa76995e4a814f/IgDQLM6an3FGR4QcPttIInadAfUA6Bp_-s6IHhmloTWIS98?e=EeRqaO).
+On 2026-10-05, an unsigned-in browser could list the archive (2.34 GB),
+README.md, and SHA256SUMS. Full downloaded-copy checksum verification remains
+pending; listing visibility alone does not establish archive integrity.
+Raw images and third-party weights are not included.
 
 ## Corrected scope of Experiment V
 
