@@ -48,7 +48,7 @@ comparisons are post-hoc and are not multiplicity-corrected.
 - `MANIFEST.sha256`: checksums for this staged version, generated after verification.
 
 Full paired NPZ records are in `paired_channel_records_20261005.zip`, under the
-read-only [OneDrive folder kdd_sgg_upload_20261005](https://1drv.ms/f/c/bbaa76995e4a814f/IgDQLM6an3FGR4QcPttIInadAfUA6Bp_-s6IHhmloTWIS98?e=qabT4l).
+read-only [OneDrive folder kdd_sgg_upload_20261005](https://1drv.ms/f/c/bbaa76995e4a814f/IgDQLM6an3FGR4QcPttIInadAfUA6Bp_-s6IHhmloTWIS98?e=f3CvUS).
 On 2026-10-05, an unsigned-in browser could list the archive (2.34 GB),
 README.md, and SHA256SUMS. The earlier paired-channel archive was downloaded and SHA256-verified.
 The new control supplement below is separately packaged; its cloud upload has
